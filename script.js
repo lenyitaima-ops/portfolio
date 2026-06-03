@@ -125,7 +125,7 @@ function renderLooks(filter = 'all') {
     .filter(look => filter === 'all' || look.category.includes(filter))
     .forEach((look, index) => {
       const card = document.createElement('article');
-      card.className = 'look-card reveal';
+      card.className = 'look-card';
       card.tabIndex = 0;
       card.setAttribute('role', 'button');
       card.setAttribute('aria-label', `Open ${look.number} ${look.title}`);
@@ -140,7 +140,6 @@ function renderLooks(filter = 'all') {
       card.addEventListener('click', () => openLook(look));
       card.addEventListener('keydown', e => { if (e.key === 'Enter') openLook(look); });
       grid.appendChild(card);
-      requestAnimationFrame(() => card.classList.add('visible'));
     });
 }
 
@@ -176,18 +175,5 @@ nav.addEventListener('click', () => nav.classList.remove('open'));
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.12 });
-reveals.forEach(el => observer.observe(el));
-
-const dot = document.querySelector('.cursor-dot');
-window.addEventListener('mousemove', (event) => {
-  dot.style.left = `${event.clientX}px`;
-  dot.style.top = `${event.clientY}px`;
-});
 
 renderLooks();
