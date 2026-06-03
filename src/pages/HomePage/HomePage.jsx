@@ -1,0 +1,75 @@
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import './HomePage.css'
+
+const HomePage = () => {
+  useEffect(() => {
+    document.title = 'RepliFa — Len Yitai Ma'
+  }, [])
+
+  return (
+    <div className="home-page">
+      <section className="hero" aria-label="RepliFa cover">
+        <div className="hero-media">
+          <img src="/assets/hero-cover.jpg" alt="RepliFa Fashion BFA Thesis Collection cover image" />
+        </div>
+        <div className="hero-copy">
+          <p className="eyebrow">Fashion BFA Thesis Collection</p>
+          <h1>REPLIFA</h1>
+          <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
+          <div className="hero-actions">
+            <Link to="/looks" className="button primary">View Looks</Link>
+            <a href="#about" className="button secondary">Read Concept</a>
+          </div>
+        </div>
+        <div className="scroll-note">Scroll</div>
+      </section>
+
+      <section className="statement" id="collection">
+        <div className="section-number">01</div>
+        <div>
+          <p className="eyebrow">Collection statement</p>
+          <h2>RepliFa challenges the established Eurocentred fashion system.</h2>
+        </div>
+        <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
+      </section>
+
+      <section className="split-section" id="about">
+        <div className="split-image">
+          <img src="/assets/about-architecture.jpg" alt="Designer in front of traditional Chinese architecture" />
+        </div>
+        <div className="split-copy">
+          <p className="eyebrow">Designer</p>
+          <h2>Len Yitai Ma</h2>
+          <p>With over eight years of experience in wearing and researching traditional Chinese Han dress, the designer’s understanding of authentic Chinese aesthetics extends beyond clothing itself.</p>
+          <p>It reaches into traditional architecture, pattern systems, accessories, footwear, headwear, ritual context, and academic knowledge — forming the foundation of this design practice.</p>
+          <dl className="meta-list">
+            <div><dt>Practice</dt><dd>Traditional dress research / garment design / footwear</dd></div>
+            <div><dt>Focus</dt><dd>Hanfu structure, cultural context, and contemporary reconstruction</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section className="editorial-band" aria-label="Editorial image">
+        <img src="/assets/editorial-collage.jpg" alt="Editorial collage from RepliFa lookbook" />
+        <div className="band-copy">
+          <p>Authenticity is not nostalgia. It is a method of rebuilding visual power from its own cultural logic.</p>
+        </div>
+      </section>
+
+      <section className="feature-look" id="feature">
+        <div className="feature-copy">
+          <p className="eyebrow">Featured detail</p>
+          <h2>Garment as structure, structure as argument.</h2>
+          <p>The collection treats the “摆” not as a decorative extension, but as a structural device that can reshape the body’s outline, alter the language of authority, and carry cultural memory into contemporary styling.</p>
+        </div>
+        <div className="feature-gallery">
+          <img src="/assets/look-05-detail.jpg" alt="Detail of Look 5 the Pagoda" />
+          <img src="/assets/look-03-detail.jpg" alt="Detail of Look 3 the Deconstructed" />
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default HomePage

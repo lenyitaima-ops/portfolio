@@ -1,0 +1,59 @@
+:root {
+  --bg: #f5f0e7;
+  --paper: #fffaf1;
+  --ink: #161514;
+  --muted: #716b62;
+  --line: rgba(22, 21, 20, 0.14);
+  --deep: #0f1110;
+  --accent: #d9c16f;
+  --accent-soft: #efe3ad;
+  --shadow: 0 24px 70px rgba(18, 16, 13, 0.18);
+  --radius: 28px;
+  --mono: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+::selection { background: var(--ink); color: var(--bg); }
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-family: var(--mono);
+  font-weight: 800;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: 12px;
+}
+h1 {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: clamp(64px, 15vw, 220px);
+  line-height: .78;
+  letter-spacing: .13em;
+}
+h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 5vw, 72px); line-height: .98; }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.4);
+}
+.button.primary { background: var(--paper); color: var(--ink); }
+.button.secondary { color: var(--paper); }
