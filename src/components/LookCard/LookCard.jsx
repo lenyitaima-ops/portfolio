@@ -6,17 +6,17 @@ const LookCard = ({ look, onOpen }) => {
       className="look-card"
       tabIndex={0}
       role="button"
-      aria-label={`Open ${look.number} ${look.title}`}
+      aria-label={`Open ${look.number} ${look.name}`}
       onClick={() => onOpen(look)}
       onKeyDown={(e) => { if (e.key === 'Enter') onOpen(look) }}
     >
       <figure>
-        <img src={look.image} alt={`${look.number} ${look.title}`} loading="lazy" />
+        <img src={look.filePath.main} alt={`${look.number} ${look.name}`} loading="lazy" />
       </figure>
       <div className="look-card-content">
         <small>{look.number}</small>
-        <h3>{look.title}</h3>
-        <p>{look.summary}</p>
+        <h3>{look.name}</h3>
+        <p>{look.description}</p>
         <div className="tag-list">
           {look.category.map((tag) => (
             <span className="tag" key={tag}>{tag}</span>

@@ -18,7 +18,7 @@ const HomePage = () => {
           <h1>REPLIFA</h1>
           <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
           <div className="hero-actions">
-            <Link to="/looks" className="button primary">View Looks</Link>
+            <Link to="/fashion" className="button primary">View Works</Link>
             <a href="#about" className="button secondary">Read Concept</a>
           </div>
         </div>
@@ -64,8 +64,8 @@ const HomePage = () => {
           <p>The collection treats the “摆” not as a decorative extension, but as a structural device that can reshape the body’s outline, alter the language of authority, and carry cultural memory into contemporary styling.</p>
         </div>
         <div className="feature-gallery">
-          <img src="/assets/look-05-detail.jpg" alt="Detail of Look 5 the Pagoda" />
-          <img src="/assets/look-03-detail.jpg" alt="Detail of Look 3 the Deconstructed" />
+          <img src="/assets/works/fashion/RepliFa/ThePagoda/image/2.jpg" alt="Detail of Look 5 the Pagoda" />
+          <img src="/assets/works/fashion/RepliFa/TheDeconstructed/image/2.jpg" alt="Detail of Look 3 the Deconstructed" />
         </div>
       </section>
     </div>

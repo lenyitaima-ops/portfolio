@@ -1,0 +1,208 @@
+{
+  "projects": [
+    {
+      "number": "Look 1",
+      "name": "The New",
+      "date": "2025-05",
+      "category": ["power", "structure"],
+      "medium": "Wool / silk jacquard",
+      "dimension": "",
+      "description": "A round-collared jacket with detachable pointed-lapel-inspired flared panels, styled with a fold-over collared shirt and trousers.",
+      "materials": [
+        "Custom woven fabric: 70% wool, 30% silk, with a hidden Chinese jacquard cloud pattern.",
+        "Lining: 100% silk gauze.",
+        "Shirt: 98% cotton, 2% spandex.",
+        "Trousers: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheNew/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheNew/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 2",
+      "name": "The Trench",
+      "date": "2025-05",
+      "category": ["power", "structure"],
+      "medium": "Double-sided satin cotton",
+      "dimension": "",
+      "description": "An overlapped-collar jacket with detachable oversized flared panels, styled with a fold-over collared shirt and wool shorts.",
+      "materials": [
+        "Jacket: double-sided satin fabric, 100% cotton.",
+        "Lining: 100% silk satin with a hidden Chinese jacquard cloud pattern.",
+        "Shirt: 70% cotton, 30% linen.",
+        "Shorts: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheTrench/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheTrench/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 3",
+      "name": "The Deconstructed",
+      "date": "2025-04",
+      "category": ["structure"],
+      "medium": "Chalk-stripe wool",
+      "dimension": "",
+      "description": "A round-collared jacket with deconstructed flared panels, styled with a fold-over collared shirt and deconstructed asymmetrical-waist trousers.",
+      "materials": [
+        "Jacket: chalk-stripe fabric, 100% wool.",
+        "Lining: 100% silk gauze with a hidden Chinese jacquard lotus pattern.",
+        "Shirt: 98% cotton, 2% spandex.",
+        "Trousers: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheDeconstructed/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheDeconstructed/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 4",
+      "name": "The Skeleprint",
+      "date": "2025-04",
+      "category": ["material", "minimal"],
+      "medium": "Double-sided twill",
+      "dimension": "",
+      "description": "A round-collared dress developed with a 1:1 pattern and print derived from a historical artifact.",
+      "materials": [
+        "Dress: double-sided twill fabric, 70% wool, 30% silk.",
+        "Lining: pinstripe fabric, 98% cotton, 2% spandex."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheSkeleprint/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheSkeleprint/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 5",
+      "name": "The Pagoda",
+      "date": "2025-03",
+      "category": ["power", "structure"],
+      "medium": "Cotton",
+      "dimension": "",
+      "description": "An overlapped-collar jacket with pagoda-sleeve-shaped flared panels, styled with a fold-over collared shirt and deconstructed crotch-seam trousers.",
+      "materials": [
+        "Jacket: 100% cotton.",
+        "Shirt: 98% cotton, 2% spandex.",
+        "Trousers: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/ThePagoda/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/ThePagoda/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 6",
+      "name": "The Mix",
+      "date": "2025-03",
+      "category": ["material", "structure"],
+      "medium": "Denim / silk gauze",
+      "dimension": "",
+      "description": "A short round-collared jacket, a round-overlapped-collar shirt, shorts, and chaps-inspired outer leg panels.",
+      "materials": [
+        "Jacket: 100% denim fabric.",
+        "Shirt: 98% cotton, 2% spandex.",
+        "Shorts: 100% cotton denim.",
+        "Chaps-inspired panels: 100% silk gauze."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheMix/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheMix/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 7",
+      "name": "The Old",
+      "date": "2025-02",
+      "category": ["minimal"],
+      "medium": "Silk gauze / cotton",
+      "dimension": "",
+      "description": "An overlapped-collar jacket and overlapped-collar yisa dress, styled with a fold-over collared shirt and wool shorts.",
+      "materials": [
+        "Jacket: 100% silk gauze.",
+        "Yisa: 100% cotton.",
+        "Shirt: 70% cotton, 30% linen.",
+        "Shorts: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheOld/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheOld/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Look 8",
+      "name": "The Felt",
+      "date": "2025-02",
+      "category": ["material", "minimal"],
+      "medium": "Handmade felted wool",
+      "dimension": "",
+      "description": "A stand-round-collared jacket, styled with a fold-over collared shirt and wool shorts, built through a handmade felted fabric solution.",
+      "materials": [
+        "Jacket: handmade felted fabric made from two different wool fabrics: double-sided wool and single-sided wool.",
+        "Shirt: 70% cotton, 30% linen.",
+        "Shorts: 100% wool."
+      ],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/RepliFa/TheFelt/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/TheFelt/image/2.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full look",
+        "Detail"
+      ]
+    }
+  ]
+}

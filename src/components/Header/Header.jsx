@@ -25,8 +25,13 @@ const Header = () => {
         Menu
       </button>
       <nav className={`nav ${open ? 'open' : ''}`} aria-label="Primary navigation" onClick={() => setOpen(false)}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/looks">Looks</NavLink>
+        <div className="nav-dropdown">
+          <span className="nav-trigger" onClick={(e) => e.stopPropagation()}>Works</span>
+          <div className="nav-menu">
+            <NavLink to="/fashion">Fashion</NavLink>
+            <NavLink to="/photography">Photography</NavLink>
+          </div>
+        </div>
         <NavLink to="/contact">Credits</NavLink>
         <a className="pill" href="mailto:lenyitaima@gmail.com">Contact</a>
       </nav>

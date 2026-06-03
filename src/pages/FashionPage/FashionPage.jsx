@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
-import { looks } from '../../data/looks'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
-import './LooksPage.css'
+import './FashionPage.css'
 
 const filters = [
   { key: 'all', label: 'All' },
@@ -12,22 +11,35 @@ const filters = [
   { key: 'minimal', label: 'Minimal' },
 ]
 
-const LooksPage = () => {
+const FashionPage = () => {
+  const [looks, setLooks] = useState([])
   const [activeFilter, setActiveFilter] = useState('all')
   const [selectedLook, setSelectedLook] = useState(null)
 
   useEffect(() => {
-    document.title = 'Looks — RepliFa'
+    document.title = 'Fashion — RepliFa'
+
+    const loadLooks = async () => {
+      try {
+        const response = await fetch('/assets/works/project.json')
+        const data = await response.json()
+        setLooks(data.projects)
+      } catch (error) {
+        console.error('Error loading looks:', error)
+      }
+    }
+
+    loadLooks()
   }, [])
 
   const visibleLooks = useMemo(
     () => looks.filter((look) => activeFilter === 'all' || look.category.includes(activeFilter)),
-    [activeFilter]
+    [looks, activeFilter]
   )
 
   return (
-    <div className="looks-page">
-      <section className="looks-section" id="looks">
+    <div className="fashion-page">
+      <section className="fashion-section" id="fashion">
         <div className="section-heading">
           <p className="eyebrow">Selected looks</p>
           <h2>Eight looks from RepliFa</h2>
@@ -58,4 +70,4 @@ const LooksPage = () => {
   )
 }
 
-export default LooksPage
+export default FashionPage
