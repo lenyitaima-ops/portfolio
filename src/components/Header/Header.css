@@ -16,21 +16,35 @@
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
 }
 .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: .24em; }
-.brand span { font-family: var(--mono); font-size: 20px; font-weight: 800; color: var(--paper); }
+.brand span { font-family: var(--mono); font-size: 20px; font-weight: 800; color: var(--ink); }
 .brand small { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav a, .nav-trigger, .nav-toggle, .nav .pill {
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 10px 14px;
-  color: var(--paper);
+  color: var(--muted);
   background: transparent;
   transition: color .35s ease, background .35s ease, border-color .35s ease;
 }
 .nav-trigger { cursor: default; }
-.nav a:hover, .nav a.active, .nav-dropdown:hover .nav-trigger { color: var(--ink); background: var(--paper); }
-.nav .pill { border-color: rgba(255,255,255,.5); cursor: pointer; }
-.nav .pill:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.nav a:hover, .nav a.active, .nav-dropdown:hover .nav-trigger { color: var(--ink); background: rgba(0,0,0,.06); }
+.nav .pill { border-color: var(--ink); color: var(--ink); cursor: pointer; }
+.nav .pill:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* Home page: header sits over the dark hero, so text is light. */
+.site-header.is-home .brand span { color: var(--paper); }
+.site-header.is-home .nav a,
+.site-header.is-home .nav-trigger,
+.site-header.is-home .nav-toggle,
+.site-header.is-home .nav .pill { color: var(--paper); }
+.site-header.is-home .nav a:hover,
+.site-header.is-home .nav a.active,
+.site-header.is-home .nav-dropdown:hover .nav-trigger { color: var(--ink); background: var(--paper); }
+.site-header.is-home .nav .pill { border-color: rgba(255,255,255,.5); }
+.site-header.is-home .nav .pill:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+/* dropdown opens on a white panel, so its links stay dark on every page */
+.site-header.is-home .nav-menu a { color: var(--muted); }
 .nav-toggle { display: none; cursor: pointer; }
 
 .nav-dropdown { position: relative; }
@@ -70,10 +84,13 @@
     backdrop-filter: blur(16px);
   }
   .nav.open { display: flex; }
-  /* the open nav is a white panel, so its text needs to be dark */
-  .nav a, .nav-trigger { color: var(--ink); }
-  .nav .pill { color: var(--ink); border-color: var(--ink); }
-  .nav .pill:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  /* the open nav is a white panel, so its text needs to be dark on every page */
+  .nav a, .nav-trigger,
+  .site-header.is-home .nav a, .site-header.is-home .nav-trigger { color: var(--ink); }
+  .nav .pill,
+  .site-header.is-home .nav .pill { color: var(--ink); border-color: var(--ink); }
+  .nav .pill:hover,
+  .site-header.is-home .nav .pill:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .brand small { display: none; }
   .nav-menu {
     position: static;

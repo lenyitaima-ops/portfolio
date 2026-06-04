@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import ContactButton from '../ContactButton/ContactButton'
 import './Header.css'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  const isHome = useLocation().pathname === '/'
 
   return (
-    <header className="site-header" id="top">
+    <header className={`site-header ${isHome ? 'is-home' : ''}`} id="top">
       <Link className="brand" to="/" aria-label="Len Yitai Ma home">
         <span>Len Yitai Ma</span>
       </Link>
