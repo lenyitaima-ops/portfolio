@@ -7,8 +7,14 @@ const LookModal = ({ look, onClose }) => {
   useEffect(() => {
     const dialog = dialogRef.current
     if (!dialog) return
-    if (look && !dialog.open) dialog.showModal()
-    if (!look && dialog.open) dialog.close()
+    if (look) {
+      if (!dialog.open) dialog.showModal()
+      document.body.style.overflow = 'hidden'
+    } else {
+      if (dialog.open) dialog.close()
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
   }, [look])
 
   useEffect(() => {

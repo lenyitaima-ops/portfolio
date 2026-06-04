@@ -1,20 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import ContactButton from '../ContactButton/ContactButton'
 import './Header.css'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
-  const [year, setYear] = useState(new Date().getFullYear())
-
-  useEffect(() => {
-    setYear(new Date().getFullYear())
-  }, [])
 
   return (
     <header className="site-header" id="top">
-      <Link className="brand" to="/" aria-label="RepliFa home">
-        <span>REPLIFA</span>
-        <small>Len Yitai Ma · {year}</small>
+      <Link className="brand" to="/" aria-label="Len Yitai Ma home">
+        <span>Len Yitai Ma</span>
       </Link>
       <button
         className="nav-toggle"
@@ -33,7 +28,7 @@ const Header = () => {
           </div>
         </div>
         <NavLink to="/contact">Credits</NavLink>
-        <a className="pill" href="mailto:lenyitaima@gmail.com">Contact</a>
+        <ContactButton />
       </nav>
     </header>
   )

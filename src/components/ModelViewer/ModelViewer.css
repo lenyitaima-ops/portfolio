@@ -1,0 +1,16 @@
+.model-viewer {
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  background: transparent;
+  cursor: grab;
+}
+.model-viewer:active { cursor: grabbing; }
+.model-loading {
+  color: var(--ink);
+  font-family: var(--mono);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 12px;
+  white-space: nowrap;
+}

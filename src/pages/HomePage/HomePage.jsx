@@ -25,15 +25,6 @@ const HomePage = () => {
         <div className="scroll-note">Scroll</div>
       </section>
 
-      <section className="statement" id="collection">
-        <div className="section-number">01</div>
-        <div>
-          <p className="eyebrow">Collection statement</p>
-          <h2>RepliFa challenges the established Eurocentred fashion system.</h2>
-        </div>
-        <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
-      </section>
-
       <section className="split-section" id="about">
         <div className="split-image">
           <img src="/assets/about-architecture.jpg" alt="Designer in front of traditional Chinese architecture" />
@@ -47,25 +38,6 @@ const HomePage = () => {
             <div><dt>Practice</dt><dd>Traditional dress research / garment design / footwear</dd></div>
             <div><dt>Focus</dt><dd>Hanfu structure, cultural context, and contemporary reconstruction</dd></div>
           </dl>
-        </div>
-      </section>
-
-      <section className="editorial-band" aria-label="Editorial image">
-        <img src="/assets/editorial-collage.jpg" alt="Editorial collage from RepliFa lookbook" />
-        <div className="band-copy">
-          <p>Authenticity is not nostalgia. It is a method of rebuilding visual power from its own cultural logic.</p>
-        </div>
-      </section>
-
-      <section className="feature-look" id="feature">
-        <div className="feature-copy">
-          <p className="eyebrow">Featured detail</p>
-          <h2>Garment as structure, structure as argument.</h2>
-          <p>The collection treats the “摆” not as a decorative extension, but as a structural device that can reshape the body’s outline, alter the language of authority, and carry cultural memory into contemporary styling.</p>
-        </div>
-        <div className="feature-gallery">
-          <img src="/assets/works/fashion/RepliFa/ThePagoda/image/2.jpg" alt="Detail of Look 5 the Pagoda" />
-          <img src="/assets/works/fashion/RepliFa/TheDeconstructed/image/2.jpg" alt="Detail of Look 3 the Deconstructed" />
         </div>
       </section>
     </div>
