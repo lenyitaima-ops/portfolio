@@ -18,7 +18,7 @@ const RepliFaPage = () => {
   const [selectedLook, setSelectedLook] = useState(null)
 
   useEffect(() => {
-    document.title = 'RepliFa — Fashion'
+    document.title = 'RepliFa — Len Yitai Ma'
 
     const loadLooks = async () => {
       try {

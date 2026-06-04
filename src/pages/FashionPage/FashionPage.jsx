@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import './FashionPage.css'
 
 const projects = [
@@ -10,16 +10,16 @@ const projects = [
     caption: 'Fashion BFA Thesis Collection',
   },
   {
-    name: 'Perfume',
+    name: "MER D'HIVER",
     path: '/fashion/perfume',
     cover: '/assets/works/fashion/Perfume/image/1.jpg',
-    caption: 'Fragrance project',
+    caption: 'Eau De Parfum',
   },
 ]
 
 const FashionPage = () => {
   useEffect(() => {
-    document.title = 'Fashion — RepliFa'
+    document.title = 'Fashion — Len Yitai Ma'
   }, [])
 
   return (
@@ -33,19 +33,7 @@ const FashionPage = () => {
 
         <div className="project-grid">
           {projects.map((project) => (
-            <Link className="project-card" to={project.path} key={project.name}>
-              <figure>
-                {project.cover ? (
-                  <img src={project.cover} alt={project.name} loading="lazy" />
-                ) : (
-                  <div className="project-placeholder" />
-                )}
-              </figure>
-              <div className="project-card-content">
-                <h3>{project.name}</h3>
-                <small>{project.caption}</small>
-              </div>
-            </Link>
+            <ProjectCard project={project} key={project.name} />
           ))}
         </div>
       </section>

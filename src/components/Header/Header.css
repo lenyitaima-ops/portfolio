@@ -16,21 +16,21 @@
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
 }
 .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: .24em; }
-.brand span { font-family: var(--mono); font-size: 20px; font-weight: 800; }
+.brand span { font-family: var(--mono); font-size: 20px; font-weight: 800; color: var(--paper); }
 .brand small { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav a, .nav-trigger, .nav-toggle, .nav .pill {
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 10px 14px;
-  color: var(--muted);
+  color: var(--paper);
   background: transparent;
-  transition: color .35s ease, background .35s ease;
+  transition: color .35s ease, background .35s ease, border-color .35s ease;
 }
 .nav-trigger { cursor: default; }
-.nav a:hover, .nav a.active, .nav-dropdown:hover .nav-trigger { color: var(--ink); background: rgba(255,255,255,.45); }
-.nav .pill { background: var(--ink); color: var(--paper); border-color: var(--ink); cursor: pointer; }
-.nav .pill:hover { background: var(--ink); color: var(--paper); }
+.nav a:hover, .nav a.active, .nav-dropdown:hover .nav-trigger { color: var(--ink); background: var(--paper); }
+.nav .pill { border-color: rgba(255,255,255,.5); cursor: pointer; }
+.nav .pill:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 .nav-toggle { display: none; cursor: pointer; }
 
 .nav-dropdown { position: relative; }
@@ -50,6 +50,8 @@
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
 }
 .nav-dropdown:hover .nav-menu { display: flex; }
+/* dropdown sits on a white panel, so keep its links dark */
+.nav-menu a { color: var(--muted); }
 
 @media (max-width: 760px) {
   .nav-toggle { display: inline-flex; }
@@ -68,6 +70,10 @@
     backdrop-filter: blur(16px);
   }
   .nav.open { display: flex; }
+  /* the open nav is a white panel, so its text needs to be dark */
+  .nav a, .nav-trigger { color: var(--ink); }
+  .nav .pill { color: var(--ink); border-color: var(--ink); }
+  .nav .pill:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .brand small { display: none; }
   .nav-menu {
     position: static;

@@ -3,7 +3,7 @@ import './ContactPage.css'
 
 const ContactPage = () => {
   useEffect(() => {
-    document.title = 'Credits — RepliFa'
+    document.title = 'Credits — Len Yitai Ma'
   }, [])
 
   return (

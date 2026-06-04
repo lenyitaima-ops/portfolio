@@ -3,7 +3,7 @@ import './PhotographyPage.css'
 
 const PhotographyPage = () => {
   useEffect(() => {
-    document.title = 'Photography — RepliFa'
+    document.title = 'Photography — Len Yitai Ma'
   }, [])
 
   return (

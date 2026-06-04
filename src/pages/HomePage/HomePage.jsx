@@ -1,10 +1,40 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { animate, stagger } from 'animejs'
 import './HomePage.css'
 
 const HomePage = () => {
   useEffect(() => {
-    document.title = 'RepliFa — Len Yitai Ma'
+    document.title = 'Len Yitai Ma'
+
+    animate('.hero-copy > *', {
+      opacity: [0, 1],
+      translateY: [24, 0],
+      delay: stagger(110, { start: 200 }),
+      duration: 850,
+      ease: 'out(3)',
+    })
+
+    const about = document.querySelector('#about')
+    if (!about) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          animate('.split-copy > *', {
+            opacity: [0, 1],
+            translateY: [24, 0],
+            delay: stagger(110, { start: 100 }),
+            duration: 850,
+            ease: 'out(3)',
+          })
+          observer.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.3 }
+    )
+    observer.observe(about)
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -13,13 +43,15 @@ const HomePage = () => {
         <div className="hero-media">
           <img src="/assets/hero-cover.jpg" alt="RepliFa Fashion BFA Thesis Collection cover image" />
         </div>
-        <div className="hero-copy">
-          <p className="eyebrow">Fashion BFA Thesis Collection</p>
-          <h1>REPLIFA</h1>
-          <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
-          <div className="hero-actions">
-            <Link to="/fashion" className="button primary">View Works</Link>
-            <a href="#about" className="button secondary">Read Concept</a>
+        <div className="hero-overlay">
+          <div className="hero-copy">
+            <p className="eyebrow">Fashion BFA Thesis Collection</p>
+            <h1>REPLIFA</h1>
+            <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
+            <div className="hero-actions">
+              <Link to="/fashion" className="button primary">View Works</Link>
+              <a href="#about" className="button secondary">Read Concept</a>
+            </div>
           </div>
         </div>
         <div className="scroll-note">Scroll</div>
@@ -27,7 +59,7 @@ const HomePage = () => {
 
       <section className="split-section" id="about">
         <div className="split-image">
-          <img src="/assets/about-architecture.jpg" alt="Designer in front of traditional Chinese architecture" />
+          <img src="/assets/IMG_5375.jpg" alt="Designer in front of traditional Chinese architecture" />
         </div>
         <div className="split-copy">
           <p className="eyebrow">Designer</p>

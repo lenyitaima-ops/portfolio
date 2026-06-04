@@ -9,7 +9,7 @@ const images = [1, 2, 3, 4, 5, 6, 7, 8].map(
 
 const PerfumePage = () => {
   useEffect(() => {
-    document.title = 'Perfume — Fashion'
+    document.title = 'Perfume — Len Yitai Ma'
   }, [])
 
   return (
@@ -17,8 +17,8 @@ const PerfumePage = () => {
       <section className="perfume-section">
         <div className="section-heading">
           <Link className="back-link" to="/fashion">← Fashion</Link>
-          <p className="eyebrow">Perfume</p>
-          <h2>Perfume</h2>
+          <p className="eyebrow">Eau De Parfum</p>
+          <h2>MER D'HIVER</h2>
           <p>A fragrance project — visual identity, posters, and product photography.</p>
         </div>
 
