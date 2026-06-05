@@ -1,9 +1,18 @@
 import { useEffect } from 'react'
+import { animate, stagger } from 'animejs'
 import './ContactPage.css'
 
 const ContactPage = () => {
   useEffect(() => {
     document.title = 'Credits — Len Yitai Ma'
+
+    animate('.credits-copy > *', {
+      opacity: [0, 1],
+      translateY: [24, 0],
+      delay: stagger(110, { start: 200 }),
+      duration: 850,
+      ease: 'out(3)',
+    })
   }, [])
 
   return (
@@ -24,19 +33,11 @@ const ContactPage = () => {
             <p><span>Assistant</span> WDW</p>
             <p><span>Sponsors</span> Haijing Xie, Alan Ma</p>
           </div>
-          <div className="contact-card">
-            <h3>Contact</h3>
-            <a href="mailto:lenyitaima@gmail.com">lenyitaima@gmail.com</a>
-            <a href="https://instagram.com/len._.m_" target="_blank" rel="noreferrer">Instagram · len._.m_</a>
-            <a href="https://lenyitaima.com" target="_blank" rel="noreferrer">lenyitaima.com</a>
-            <small>Phone number intentionally omitted for public-site privacy. Add it back in the HTML if needed.</small>
-          </div>
         </div>
       </section>
 
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Len Yitai Ma. RepliFa.</p>
-        <a href="#top">Back to top</a>
       </footer>
     </div>
   )

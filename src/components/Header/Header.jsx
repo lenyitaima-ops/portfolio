@@ -1,28 +1,19 @@
-import { useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import ContactButton from '../ContactButton/ContactButton'
 import './Header.css'
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-  const isHome = useLocation().pathname === '/'
+  const { pathname } = useLocation()
+  const lightHeader = pathname === '/' || pathname === '/contact'
 
   return (
-    <header className={`site-header ${isHome ? 'is-home' : ''}`} id="top">
+    <header className={`site-header ${lightHeader ? 'is-home' : ''}`} id="top">
       <Link className="brand" to="/" aria-label="Len Yitai Ma home">
         <span>Len Yitai Ma</span>
       </Link>
-      <button
-        className="nav-toggle"
-        aria-label="Open navigation"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-      >
-        Menu
-      </button>
-      <nav className={`nav ${open ? 'open' : ''}`} aria-label="Primary navigation" onClick={() => setOpen(false)}>
+      <nav className="nav" aria-label="Primary navigation">
         <div className="nav-dropdown">
-          <span className="nav-trigger" onClick={(e) => e.stopPropagation()}>Works</span>
+          <span className="nav-trigger">Works</span>
           <div className="nav-menu">
             <NavLink to="/fashion">Fashion</NavLink>
             <NavLink to="/photography">Photography</NavLink>

@@ -60,7 +60,7 @@
 .meta-list dd { margin: 0; color: var(--muted); }
 
 @media (max-width: 760px) {
-  .hero-copy { top: 16vh; }
+  .hero-copy { position: absolute; top: auto; bottom: 0; padding-bottom: 6vh; }
   .split-section { grid-template-columns: 1fr; }
   .split-image { min-height: 420px; }
   .meta-list div { grid-template-columns: 1fr; gap: 4px; }

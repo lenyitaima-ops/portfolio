@@ -41,17 +41,19 @@ const HomePage = () => {
     <div className="home-page">
       <section className="hero" aria-label="RepliFa cover">
         <div className="hero-media">
-          <img src="/assets/hero-cover.jpg" alt="RepliFa Fashion BFA Thesis Collection cover image" />
+          <picture>
+            <source media="(max-width: 760px)" srcSet="/assets/hero-cover-mobile.jpg" />
+            <img src="/assets/hero-cover.jpg" alt="RepliFa Fashion BFA Thesis Collection cover image" />
+          </picture>
         </div>
         <div className="hero-overlay">
           <div className="hero-copy">
             <p className="eyebrow">Fashion BFA Thesis Collection</p>
             <h1>REPLIFA</h1>
             <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
-            <div className="hero-actions">
-              <Link to="/fashion" className="button primary">View Works</Link>
-              <a href="#about" className="button secondary">Read Concept</a>
-            </div>
+          <div className="hero-actions">
+            <Link to="/fashion" className="button primary">View Project</Link>
+          </div>
           </div>
         </div>
         <div className="scroll-note">Scroll</div>
