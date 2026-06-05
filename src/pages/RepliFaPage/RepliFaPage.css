@@ -22,14 +22,14 @@
   grid-template-columns: .8fr 1.2fr;
   gap: clamp(24px, 5vw, 72px);
   padding: clamp(70px, 10vw, 130px) clamp(18px, 5vw, 80px);
-  background: var(--deep);
-  color: var(--paper);
+  background: var(--bg);
+  color: var(--ink);
 }
 .feature-copy { align-self: center; }
-.feature-copy .eyebrow { color: rgba(255,250,241,.55); }
-.feature-copy p:not(.eyebrow) { color: rgba(255,250,241,.7); font-size: 18px; line-height: 1.65; }
+.feature-copy .eyebrow { color: var(--muted); }
+.feature-copy p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.65; }
 .feature-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.feature-gallery img { border-radius: var(--radius); aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 24px 70px rgba(0,0,0,.4); }
+.feature-gallery img { border-radius: var(--radius); aspect-ratio: 3 / 4; object-fit: cover; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
 .feature-gallery img:first-child { margin-top: 70px; }
 
 .replifa-section { padding: clamp(76px, 11vw, 140px) clamp(18px, 5vw, 80px); }
