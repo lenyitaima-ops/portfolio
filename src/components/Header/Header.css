@@ -1,15 +1,14 @@
 .site-header {
   position: fixed;
-  top: 18px;
-  left: 18px;
-  right: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 12px 14px 12px 20px;
-  border-radius: 999px;
+  padding: 12px 20px;
   background: transparent;
   backdrop-filter: blur(16px);
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
