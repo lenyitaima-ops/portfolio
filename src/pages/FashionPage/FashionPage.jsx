@@ -6,7 +6,7 @@ const projects = [
   {
     name: 'RepliFa',
     path: '/fashion/replifa',
-    cover: '/assets/works/fashion/RepliFa/TheNew/image/1.jpg',
+    cover: '/assets/works/fashion/RepliFa/1.jpg',
     caption: 'Fashion BFA Thesis Collection',
   },
   {

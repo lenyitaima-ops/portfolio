@@ -11,10 +11,9 @@
   box-shadow: 0 24px 60px rgba(0,0,0,.18);
 }
 .look-card figure { margin: 0; aspect-ratio: 1 / 1; background: #ddd1c2; overflow: hidden; }
-.look-card img { width: 100%; height: 100%; object-fit: cover; }
+.look-card img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .look-card-content { padding: 18px; }
 .look-card-content small { color: var(--muted); font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; }
 .look-card h3 { margin: 9px 0 10px; font-family: var(--serif); font-weight: 400; font-size: 29px; }
-.look-card p { margin: 0; color: var(--muted); line-height: 1.5; }
 .tag-list { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
 .tag { font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 0; padding: 5px 8px; }

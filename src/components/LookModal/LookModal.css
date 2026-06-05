@@ -14,7 +14,7 @@
 
 .modal-inner { display: grid; grid-template-columns: 1.55fr 1fr; height: 100%; }
 
-.modal-images { height: 100%; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #ddd1c2; }
+.modal-images { height: 100%; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
 .modal-images figure { margin: 0; }
 .modal-images img { width: 100%; height: auto; display: block; }
 .modal-images figcaption { padding: 8px 12px 4px; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }

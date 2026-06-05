@@ -16,7 +16,6 @@ const LookCard = ({ look, onOpen }) => {
       <div className="look-card-content">
         <small>{look.number}</small>
         <h3>{look.name}</h3>
-        <p>{look.description}</p>
         <div className="tag-list">
           {look.category.map((tag) => (
             <span className="tag" key={tag}>{tag}</span>

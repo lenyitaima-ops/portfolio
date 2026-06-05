@@ -8,10 +8,10 @@ const UNDER_LAYER = 'Under Layer'
 
 const filters = [
   { key: 'all', label: 'All' },
-  { key: 'Traditional Pattern', label: 'Traditional Pattern' },
-  { key: 'Flare Guard', label: 'Flare Guard' },
   { key: 'Overlaped-Collared', label: 'Overlaped-Collared' },
   { key: 'Round-Collared', label: 'Round-Collared' },
+  { key: 'Flare Guard', label: 'Flare Guard' },
+  { key: 'Traditional Pattern', label: 'Traditional Pattern' },
   { key: UNDER_LAYER, label: 'Under Layer' },
 ]
 
