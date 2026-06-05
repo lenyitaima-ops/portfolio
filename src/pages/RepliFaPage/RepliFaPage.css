@@ -40,7 +40,7 @@
   border: 1px solid var(--line);
   background: transparent;
   color: var(--muted);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 10px 16px;
   cursor: pointer;
 }

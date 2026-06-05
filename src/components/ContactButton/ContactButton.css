@@ -8,7 +8,7 @@
 .contact-dialog::backdrop { background: rgba(0,0,0,.7); backdrop-filter: blur(8px); }
 .contact-dialog-inner {
   padding: clamp(36px, 5vw, 64px);
-  border-radius: 18px;
+  border-radius: 0;
   background: rgba(255,255,255,.08);
   backdrop-filter: blur(16px);
   color: var(--paper);
@@ -22,7 +22,7 @@
   margin-top: 26px;
   padding: 10px 22px;
   border: 1px solid rgba(255,250,241,.4);
-  border-radius: 999px;
+  border-radius: 0;
   background: transparent;
   cursor: pointer;
 }

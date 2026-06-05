@@ -4,13 +4,13 @@
   max-width: none;
   max-height: none;
   border: 0;
-  border-radius: 18px;
+  border-radius: 0;
   padding: 0;
   background: transparent;
   color: var(--ink);
   overflow: hidden;
 }
-.look-modal::backdrop { background: rgba(0,0,0,.7); backdrop-filter: blur(8px); }
+.look-modal::backdrop { background: rgba(245,240,231,.45); backdrop-filter: blur(28px); }
 
 .modal-inner { display: grid; grid-template-columns: 1.55fr 1fr; height: 100%; }
 
@@ -24,18 +24,18 @@
   overflow-y: auto;
   padding: clamp(32px, 4vw, 64px);
   align-content: start;
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(16px);
-  color: var(--paper);
+  background: rgba(255,255,255,.45);
+  backdrop-filter: blur(28px);
+  color: var(--ink);
 }
-.modal-copy, .modal-copy * { color: var(--paper); }
-.modal-copy .eyebrow { color: rgba(255,250,241,.7); }
-.modal-copy h2 { font-size: clamp(38px, 4vw, 60px); margin-bottom: 4px; color: var(--paper); }
-.modal-copy .modal-meta { color: var(--paper); font-weight: 700; margin: 8px 0 18px; }
-.modal-copy p { color: rgba(255,250,241,.82); line-height: 1.6; font-size: 17px; }
-.modal-copy h3 { margin-top: 28px; font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--paper); }
-.modal-copy ul { padding-left: 18px; color: rgba(255,250,241,.82); line-height: 1.6; }
-.modal-link { display: inline-block; margin-top: 24px; padding: 10px 18px; border: 1px solid rgba(255,250,241,.4); border-radius: 999px; color: var(--paper); }
+.modal-copy, .modal-copy * { color: var(--ink); }
+.modal-copy .eyebrow { color: var(--muted); }
+.modal-copy h2 { font-size: clamp(38px, 4vw, 60px); margin-bottom: 4px; color: var(--ink); }
+.modal-copy .modal-meta { color: var(--ink); font-weight: 700; margin: 8px 0 18px; }
+.modal-copy p { color: var(--muted); line-height: 1.6; font-size: 17px; }
+.modal-copy h3 { margin-top: 28px; font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--ink); }
+.modal-copy ul { padding-left: 18px; color: var(--muted); line-height: 1.6; }
+.modal-link { display: inline-block; margin-top: 24px; padding: 10px 18px; border: 1px solid var(--line); border-radius: 0; color: var(--ink); }
 
 .modal-close {
   position: absolute;
@@ -45,7 +45,7 @@
   width: 42px;
   height: 42px;
   border: 0;
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(255,255,255,.85);
   backdrop-filter: blur(8px);
   cursor: pointer;

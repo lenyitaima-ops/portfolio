@@ -4,12 +4,15 @@ import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './RepliFaPage.css'
 
+const UNDER_LAYER = 'Under Layer'
+
 const filters = [
   { key: 'all', label: 'All' },
-  { key: 'power', label: 'Power' },
-  { key: 'structure', label: 'Structure' },
-  { key: 'material', label: 'Material' },
-  { key: 'minimal', label: 'Minimal' },
+  { key: 'Traditional Pattern', label: 'Traditional Pattern' },
+  { key: 'Flare Guard', label: 'Flare Guard' },
+  { key: 'Overlaped-Collared', label: 'Overlaped-Collared' },
+  { key: 'Round-Collared', label: 'Round-Collared' },
+  { key: UNDER_LAYER, label: 'Under Layer' },
 ]
 
 const RepliFaPage = () => {
@@ -33,10 +36,13 @@ const RepliFaPage = () => {
     loadLooks()
   }, [])
 
-  const visibleLooks = useMemo(
-    () => looks.filter((look) => activeFilter === 'all' || look.category.includes(activeFilter)),
-    [looks, activeFilter]
-  )
+  const visibleLooks = useMemo(() => {
+    // "All" shows every look except the hidden under-layer placeholders.
+    if (activeFilter === 'all') {
+      return looks.filter((look) => !look.category.includes(UNDER_LAYER))
+    }
+    return looks.filter((look) => look.category.includes(activeFilter))
+  }, [looks, activeFilter])
 
   return (
     <div className="replifa-page">

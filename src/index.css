@@ -8,7 +8,7 @@
   --accent: #d9c16f;
   --accent-soft: #efe3ad;
   --shadow: 0 24px 70px rgba(18, 16, 13, 0.18);
-  --radius: 28px;
+  --radius: 0;
   --mono: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --serif: Georgia, "Times New Roman", serif;
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -52,7 +52,7 @@ h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(34
   justify-content: center;
   min-height: 48px;
   padding: 0 20px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid rgba(255,255,255,.4);
 }
 .button.primary { background: var(--paper); color: var(--ink); }

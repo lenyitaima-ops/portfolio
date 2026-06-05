@@ -17,4 +17,4 @@
 .look-card h3 { margin: 9px 0 10px; font-family: var(--serif); font-weight: 400; font-size: 29px; }
 .look-card p { margin: 0; color: var(--muted); line-height: 1.5; }
 .tag-list { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
-.tag { font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 8px; }
+.tag { font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 0; padding: 5px 8px; }
