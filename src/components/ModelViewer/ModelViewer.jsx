@@ -64,7 +64,14 @@ const ModelViewer = () => {
         <Suspense fallback={<Html center className="model-loading">Loading model…</Html>}>
           <Model />
         </Suspense>
-        <OrbitControls makeDefault enablePan={false} target={[0, 0, 0]} />
+        <OrbitControls
+          makeDefault
+          enablePan={false}
+          enableZoom={false}
+          minDistance={6}
+          maxDistance={6}
+          target={[0, 0, 0]}
+        />
       </Canvas>
     </div>
   )

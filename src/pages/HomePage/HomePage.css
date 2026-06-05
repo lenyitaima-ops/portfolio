@@ -47,15 +47,14 @@
 .split-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid var(--line);
 }
 .split-image { min-height: 460px; overflow: hidden; }
 .split-image img { width: 100%; height: 100%; object-fit: cover; }
 .split-copy { padding: clamp(40px, 5vw, 72px); align-self: center; }
 .split-copy > * { opacity: 0; }
 .split-copy p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.65; }
-.meta-list { margin-top: 34px; border-top: 1px solid var(--line); }
-.meta-list div { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.meta-list { margin-top: 34px; }
+.meta-list div { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 18px 0; }
 .meta-list dt { color: var(--ink); font-weight: 700; }
 .meta-list dd { margin: 0; color: var(--muted); }
 
