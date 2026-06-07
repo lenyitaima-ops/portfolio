@@ -252,38 +252,56 @@
     },
     {
       "number": "Under Layer 1",
-      "name": "Under Layer — Placeholder 1",
+      "name": "Under Layer U1",
       "date": "",
       "category": ["Under Layer"],
       "medium": "",
       "dimension": "",
-      "description": "Placeholder for a hidden under-layer look. Replace images, copy, and materials.",
+      "description": "An under-layer styling study from RepliFa.",
       "materials": [],
       "link": "",
       "filePath": {
-        "main": "/assets/editorial-collage.jpg",
-        "additional": []
+        "main": "/assets/works/fashion/RepliFa/Underlayer-U1/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/Underlayer-U1/2.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U1/3.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U1/4.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U1/5.jpg"
+        ]
       },
       "imageCaptions": [
-        "Placeholder"
+        "Full look",
+        "Detail",
+        "Detail",
+        "Detail",
+        "Detail"
       ]
     },
     {
       "number": "Under Layer 2",
-      "name": "Under Layer — Placeholder 2",
+      "name": "Under Layer U2",
       "date": "",
       "category": ["Under Layer"],
       "medium": "",
       "dimension": "",
-      "description": "Placeholder for a hidden under-layer look. Replace images, copy, and materials.",
+      "description": "An under-layer styling study from RepliFa.",
       "materials": [],
       "link": "",
       "filePath": {
-        "main": "/assets/editorial-collage.jpg",
-        "additional": []
+        "main": "/assets/works/fashion/RepliFa/Underlayer-U2/1.jpg",
+        "additional": [
+          "/assets/works/fashion/RepliFa/Underlayer-U2/2.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U2/3.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U2/4.jpg",
+          "/assets/works/fashion/RepliFa/Underlayer-U2/5.jpg"
+        ]
       },
       "imageCaptions": [
-        "Placeholder"
+        "Full look",
+        "Detail",
+        "Detail",
+        "Detail",
+        "Detail"
       ]
     }
   ]
