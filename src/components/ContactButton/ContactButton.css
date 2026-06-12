@@ -17,7 +17,8 @@
 .contact-dialog-inner, .contact-dialog-inner * { color: var(--paper); }
 .contact-dialog-inner .eyebrow { color: rgba(255,250,241,.7); }
 .contact-dialog-inner h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 14px; }
-.contact-dialog-inner .contact-email { font-family: var(--mono); letter-spacing: .08em; font-size: 18px; }
+.contact-dialog-inner .contact-email { font-family: var(--mono); letter-spacing: .08em; font-size: 18px; margin: 0; }
+.contact-dialog-inner .contact-wechat { font-family: var(--mono); letter-spacing: .08em; font-size: 18px; margin: 12px 0 0; }
 .contact-close {
   margin-top: 26px;
   padding: 10px 22px;

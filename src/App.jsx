@@ -6,7 +6,6 @@ import RepliFaPage from './pages/RepliFaPage/RepliFaPage'
 import PerfumePage from './pages/PerfumePage/PerfumePage'
 import ShoesPage from './pages/ShoesPage/ShoesPage'
 import PhotographyPage from './pages/PhotographyPage/PhotographyPage'
-import ContactPage from './pages/ContactPage/ContactPage'
 import './App.css'
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <Route path="/fashion/perfume" element={<PerfumePage />} />
           <Route path="/fashion/shoes" element={<ShoesPage />} />
           <Route path="/photography" element={<PhotographyPage />} />
-          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

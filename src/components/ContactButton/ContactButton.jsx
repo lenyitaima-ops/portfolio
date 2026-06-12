@@ -35,6 +35,7 @@ const ContactButton = () => {
           <p className="eyebrow">Contact</p>
           <h2>Email address copied to clipboard</h2>
           <p className="contact-email">{EMAIL}</p>
+          <p className="contact-wechat">wechat: Lenyitaima</p>
           <button className="contact-close" onClick={closeContact}>Close</button>
         </div>
       </dialog>
