@@ -48,8 +48,11 @@ const RepliFaPage = () => {
 
   return (
     <div className="replifa-page">
+      <div className="replifa-top">
+        <Link className="back-link" to="/fashion">← Fashion</Link>
+      </div>
+
       <section className="statement" id="collection">
-        <Link className="back-link statement-back" to="/fashion">← Fashion</Link>
         <div className="section-number">01</div>
         <div>
           <p className="eyebrow">Collection statement</p>
