@@ -7,12 +7,12 @@
       "category": ["Traditional Pattern", "Round-Collared", "Flare Guard"],
       "medium": "Wool / silk jacquard",
       "dimension": "",
-      "description": "A round-collared jacket with detachable pointed-lapel-inspired flared panels, styled with a fold-over collared shirt and trousers.",
+      "description": "A round-collared jacket with detachable pointed-lapel-inspired flared guard, styled with a fold-over collared shirt and pants.",
       "materials": [
         "Custom woven fabric: 70% wool, 30% silk, with a hidden Chinese jacquard cloud pattern.",
         "Lining: 100% silk gauze.",
         "Shirt: 98% cotton, 2% spandex.",
-        "Trousers: 100% wool."
+        "pants: 100% wool."
       ],
       "link": "",
       "filePath": {
@@ -39,7 +39,7 @@
       "category": ["Traditional Pattern", "Flare Guard", "Overlaped-Collared"],
       "medium": "Double-sided satin cotton",
       "dimension": "",
-      "description": "An overlapped-collar jacket with detachable oversized flared panels, styled with a fold-over collared shirt and wool shorts.",
+      "description": "An overlapped-collar jacket with detachable oversized flared guard, styled with a fold-over collared shirt and wool shorts.",
       "materials": [
         "Jacket: double-sided satin fabric, 100% cotton.",
         "Lining: 100% silk satin with a hidden Chinese jacquard cloud pattern.",
@@ -69,12 +69,12 @@
       "category": ["Traditional Pattern", "Round-Collared", "Flare Guard"],
       "medium": "Chalk-stripe wool",
       "dimension": "",
-      "description": "A round-collared jacket with deconstructed flared panels, styled with a fold-over collared shirt and deconstructed asymmetrical-waist trousers.",
+      "description": "A round-collared jacket with deconstructed flared guard, styled with a fold-over collared shirt and deconstructed asymmetrical-waist pants.",
       "materials": [
         "Jacket: chalk-stripe fabric, 100% wool.",
         "Lining: 100% silk gauze with a hidden Chinese jacquard lotus pattern.",
         "Shirt: 98% cotton, 2% spandex.",
-        "Trousers: 100% wool."
+        "pants: 100% wool."
       ],
       "link": "",
       "filePath": {
@@ -131,11 +131,11 @@
       "category": ["Overlaped-Collared", "Flare Guard"],
       "medium": "Cotton",
       "dimension": "",
-      "description": "An overlapped-collar jacket with pagoda-sleeve-shaped flared panels, styled with a fold-over collared shirt and deconstructed crotch-seam trousers.",
+      "description": "An overlapped-collar jacket with pagoda-sleeve-shaped flared guard, styled with a fold-over collared shirt and deconstructed crotch-seam pants.",
       "materials": [
         "Jacket: 100% cotton.",
         "Shirt: 98% cotton, 2% spandex.",
-        "Trousers: 100% wool."
+        "pants: 100% wool."
       ],
       "link": "",
       "filePath": {

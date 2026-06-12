@@ -56,7 +56,7 @@ const RepliFaPage = () => {
         <div className="section-number">01</div>
         <div>
           <p className="eyebrow">Collection statement</p>
-          <h2>RepliFa challenges the established Eurocentred fashion system.</h2>
+          <h2>RepliFa challenges the established eurocentric fashion system.</h2>
         </div>
         <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
       </section>

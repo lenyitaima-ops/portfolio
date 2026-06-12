@@ -13,6 +13,44 @@
 .shoes-section { padding: clamp(40px, 8vw, 90px) clamp(18px, 5vw, 80px) clamp(76px, 11vw, 140px); }
 .shoes-page .section-heading { max-width: 840px; margin-bottom: 34px; }
 .shoes-page .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.shoes-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 80vh;
+  align-items: stretch;
+}
+.shoes-split-left { position: relative; overflow: hidden; min-height: inherit; }
+.shoes-split-left img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.shoes-split-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: inherit;
+  overflow: hidden;
+}
+.shoes-split-rotated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: inherit;
+}
+.shoes-split-rotated img {
+  transform: rotate(90deg);
+  width: min(72vh, 42vw);
+  height: auto;
+  max-width: none;
+  display: block;
+}
+
 .shoes-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .shoes-page .feature-gallery .project-placeholder { aspect-ratio: 3 / 4; }
 
@@ -20,5 +58,9 @@
   .shoes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
+  .shoes-split { grid-template-columns: 1fr; min-height: auto; }
+  .shoes-split-left { min-height: 60vh; }
+  .shoes-split-right { min-height: 70vh; }
+  .shoes-split-rotated img { width: min(60vh, 80vw); }
   .shoes-grid { grid-template-columns: 1fr; }
 }

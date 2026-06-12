@@ -10,16 +10,16 @@ const projects = [
     caption: 'Fashion BFA Thesis Collection',
   },
   {
+    name: 'RepliFa Shoe Collection',
+    path: '/fashion/shoes',
+    cover: '/assets/works/fashion/Shoes/1.jpg',
+    caption: 'Footwear',
+  },
+  {
     name: "MER D'HIVER",
     path: '/fashion/perfume',
     cover: '/assets/works/fashion/Perfume/image/1.jpg',
     caption: 'Eau De Parfum',
-  },
-  {
-    name: 'RepliFa Shoe Collection',
-    path: '/fashion/shoes',
-    cover: '/assets/works/fashion/Shoes/1.png',
-    caption: 'Footwear',
   },
 ]
 

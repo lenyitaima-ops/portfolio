@@ -27,16 +27,24 @@ const ShoesPage = () => {
   return (
     <div className="shoes-page">
       <section className="shoes-intro">
-        <img src="/assets/works/fashion/Shoes/2.png" alt="Mawangdui Han tomb excavation" />
+        <img src="/assets/works/fashion/Shoes/2.jpg" alt="Mawangdui Han tomb excavation" />
         <Link className="back-link shoes-back" to="/fashion">← Fashion</Link>
         <div className="shoes-intro-copy">
           <p>The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.</p>
         </div>
       </section>
 
-      <section className="editorial-band" aria-label="Editorial placeholder">
-        <div className="band-copy">
-          <p>Placeholder editorial statement.</p>
+      <section className="shoes-split">
+        <div className="shoes-split-left">
+          <img src="/assets/works/fashion/Shoes/5.jpg" alt="Forked-toe shoes from Mawangdui Han tombs" />
+        </div>
+        <div className="shoes-split-right">
+          <div className="shoes-split-rotated">
+            <img src="/assets/works/fashion/Shoes/3.jpg" alt="Forked-toe shoe" />
+          </div>
+          <div className="shoes-split-rotated">
+            <img src="/assets/works/fashion/Shoes/4.jpg" alt="Forked-toe shoe detail" />
+          </div>
         </div>
       </section>
 

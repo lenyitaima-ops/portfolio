@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
   const { pathname } = useLocation()
-  const lightHeader = pathname === '/' || pathname === '/contact'
+  const lightHeader = pathname === '/' || pathname === '/contact' || pathname === '/fashion/shoes'
 
   return (
     <header className={`site-header ${lightHeader ? 'is-home' : ''}`} id="top">
