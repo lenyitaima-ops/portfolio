@@ -1,0 +1,24 @@
+.shoes-intro { position: relative; min-height: 100vh; overflow: hidden; display: flex; align-items: flex-end; }
+.shoes-intro > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.shoes-intro::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+.shoes-back { position: absolute; top: clamp(86px, 11vw, 120px); left: clamp(20px, 4vw, 56px); z-index: 2; color: var(--paper); }
+.shoes-back:hover { color: var(--paper); opacity: .8; }
+.shoes-intro-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: clamp(20px, 4vw, 56px);
+}
+.shoes-intro-copy p { margin: 0; color: var(--paper); line-height: 1.55; font-size: clamp(22px, 2.6vw, 34px); }
+.shoes-section { padding: clamp(40px, 8vw, 90px) clamp(18px, 5vw, 80px) clamp(76px, 11vw, 140px); }
+.shoes-page .section-heading { max-width: 840px; margin-bottom: 34px; }
+.shoes-page .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.shoes-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.shoes-page .feature-gallery .project-placeholder { aspect-ratio: 3 / 4; }
+
+@media (max-width: 1100px) {
+  .shoes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .shoes-grid { grid-template-columns: 1fr; }
+}

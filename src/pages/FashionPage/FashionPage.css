@@ -2,8 +2,11 @@
 .section-heading { max-width: 840px; margin-bottom: 34px; }
 .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.6; }
 
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 540px)); gap: 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
   .project-grid { grid-template-columns: minmax(0, 540px); }
 }

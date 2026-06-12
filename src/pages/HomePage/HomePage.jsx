@@ -49,8 +49,8 @@ const HomePage = () => {
         <div className="hero-overlay">
           <div className="hero-copy">
             <p className="eyebrow">Fashion BFA Thesis Collection</p>
-            <h1>REPLIFA</h1>
-            <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a Eurocentred fashion system.</p>
+            <h1>RepliFa</h1>
+            <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a eurocentric fashion system.</p>
           <div className="hero-actions">
             <Link to="/fashion" className="button primary">View Project</Link>
           </div>

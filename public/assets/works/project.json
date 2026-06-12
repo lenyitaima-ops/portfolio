@@ -303,6 +303,52 @@
         "Detail",
         "Detail"
       ]
+    },
+    {
+      "number": "Shoe 1",
+      "name": "Shoe 01",
+      "date": "",
+      "category": ["Footwear"],
+      "medium": "",
+      "dimension": "",
+      "description": "Replace with this shoe's description.",
+      "materials": [],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/Shoes/Shoe-01/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/Shoes/Shoe-01/image/2.jpg",
+          "/assets/works/fashion/Shoes/Shoe-01/image/3.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full view",
+        "Detail",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Shoe 2",
+      "name": "Shoe 02",
+      "date": "",
+      "category": ["Footwear"],
+      "medium": "",
+      "dimension": "",
+      "description": "Replace with this shoe's description.",
+      "materials": [],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/Shoes/Shoe-02/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/Shoes/Shoe-02/image/2.jpg",
+          "/assets/works/fashion/Shoes/Shoe-02/image/3.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full view",
+        "Detail",
+        "Detail"
+      ]
     }
   ]
 }

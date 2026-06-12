@@ -37,11 +37,13 @@ const RepliFaPage = () => {
   }, [])
 
   const visibleLooks = useMemo(() => {
+    // Footwear lives on its own page, so it never shows in the RepliFa grid.
+    const looksOnly = looks.filter((look) => !look.category.includes('Footwear'))
     // "All" shows every look except the hidden under-layer placeholders.
     if (activeFilter === 'all') {
-      return looks.filter((look) => !look.category.includes(UNDER_LAYER))
+      return looksOnly.filter((look) => !look.category.includes(UNDER_LAYER))
     }
-    return looks.filter((look) => look.category.includes(activeFilter))
+    return looksOnly.filter((look) => look.category.includes(activeFilter))
   }, [looks, activeFilter])
 
   return (
