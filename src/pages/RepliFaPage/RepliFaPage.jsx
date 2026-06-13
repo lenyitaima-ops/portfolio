@@ -64,7 +64,7 @@ const RepliFaPage = () => {
       <section className="editorial-band" aria-label="Editorial image">
         <img src="/assets/editorial-collage.jpg" alt="Editorial collage from RepliFa lookbook" />
         <div className="band-copy">
-          <p>Authenticity is not nostalgia. It is a method of rebuilding visual power from its own cultural logic.</p>
+          <p>Only through authentic artifacts can the lost aesthetic be reconstructed and truly embodied.</p>
         </div>
       </section>
 

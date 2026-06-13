@@ -66,8 +66,8 @@ const HomePage = () => {
         <div className="split-copy">
           <p className="eyebrow">Designer</p>
           <h2>Len Yitai Ma</h2>
-          <p>With over eight years of experience in wearing and researching traditional Chinese Han dress, the designer’s understanding of authentic Chinese aesthetics extends beyond clothing itself.</p>
-          <p>It reaches into traditional architecture, pattern systems, accessories, footwear, headwear, ritual context, and academic knowledge — forming the foundation of this design practice.</p>
+          <p>With over 8 years of experience in wearing and researching traditional Chinese Han ethinicity's cloth, the designer’s understanding of authentic Chinese aesthetics goes far beyond clothes.</p>
+          <p>Yet extends to traditional architecture, pattern, accessories, and the broader rituals contexts behind. Grounded in rigorous academic knowledge, this understanding forms the foundation of the designer’s practice.</p>
           <dl className="meta-list">
             <div><dt>Practice</dt><dd>Traditional dress research / garment design / footwear</dd></div>
             <div><dt>Focus</dt><dd>Hanfu structure, cultural context, and contemporary reconstruction</dd></div>
