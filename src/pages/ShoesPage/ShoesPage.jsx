@@ -40,10 +40,10 @@ const ShoesPage = () => {
         </div>
         <div className="shoes-split-right">
           <div className="shoes-split-rotated">
-            <img src="/assets/works/fashion/Shoes/4.jpg" alt="Forked-toe shoe detail" />
+            <img src="/assets/works/fashion/Shoes/4.png" alt="Forked-toe shoe detail" />
           </div>
           <div className="shoes-split-rotated">
-            <img src="/assets/works/fashion/Shoes/3.jpg" alt="Forked-toe shoe" />
+            <img src="/assets/works/fashion/Shoes/3.png" alt="Forked-toe shoe" />
           </div>
         </div>
       </section>

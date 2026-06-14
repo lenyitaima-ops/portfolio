@@ -69,8 +69,8 @@ const HomePage = () => {
           <p>With over 8 years of experience in wearing and researching traditional Chinese Han ethinicity's cloth, the designer’s understanding of authentic Chinese aesthetics goes far beyond clothes.</p>
           <p>Yet extends to traditional architecture, pattern, accessories, and the broader rituals contexts behind. Grounded in rigorous academic knowledge, this understanding forms the foundation of the designer’s practice.</p>
           <dl className="meta-list">
-            <div><dt>Practice</dt><dd>Traditional dress research / garment design / footwear</dd></div>
-            <div><dt>Focus</dt><dd>Hanfu structure, cultural context, and contemporary reconstruction</dd></div>
+            <div><dt>Practice</dt><dd>Fashion design, Photography</dd></div>
+            <div><dt>Software I use</dt><dd>Adobe Photoshop, Adobe Illustrator, Adobe InDesign, CLO 3D, Adobe Premiere Pro, DaVinci Resolve</dd></div>
           </dl>
         </div>
       </section>
