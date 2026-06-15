@@ -1,10 +1,18 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { createAnimatable } from 'animejs'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './RepliFaPage.css'
 
 const UNDER_LAYER = 'Under Layer'
+
+const bandImages = [
+  '/assets/works/fashion/RepliFa/2.jpg',
+  '/assets/works/fashion/RepliFa/3.jpg',
+  '/assets/works/fashion/RepliFa/4.jpg',
+  '/assets/works/fashion/RepliFa/5.jpg',
+]
 
 const filters = [
   { key: 'all', label: 'All' },
@@ -19,6 +27,45 @@ const RepliFaPage = () => {
   const [looks, setLooks] = useState([])
   const [activeFilter, setActiveFilter] = useState('all')
   const [selectedLook, setSelectedLook] = useState(null)
+  const bandRef = useRef(null)
+  const trackRef = useRef(null)
+
+  useEffect(() => {
+    const band = bandRef.current
+    const track = trackRef.current
+    if (!band || !track) return
+
+    // createAnimatable smoothly tweens the track toward each target x,
+    // giving the scroll motion easing/inertia instead of a hard 1:1 follow.
+    const animatable = createAnimatable(track, {
+      x: { duration: 1800, ease: 'out(2)' },
+    })
+
+    let frame = 0
+    const update = () => {
+      frame = 0
+      const rect = band.getBoundingClientRect()
+      const total = rect.height + window.innerHeight
+      // 0 when the band first enters from the bottom, 1 when it has left the top.
+      const progress = Math.min(Math.max((window.innerHeight - rect.top) / total, 0), 1)
+      const maxShift = track.scrollWidth - band.clientWidth
+      if (maxShift > 0) animatable.x(-progress * maxShift)
+    }
+    const onScroll = () => {
+      if (frame) return
+      frame = window.requestAnimationFrame(update)
+    }
+
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      if (frame) window.cancelAnimationFrame(frame)
+      animatable.revert?.()
+    }
+  }, [])
 
   useEffect(() => {
     document.title = 'RepliFa — Len Yitai Ma'
@@ -61,8 +108,12 @@ const RepliFaPage = () => {
         <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
       </section>
 
-      <section className="editorial-band" aria-label="Editorial image">
-        <img src="/assets/editorial-collage.jpg" alt="Editorial collage from RepliFa lookbook" />
+      <section className="editorial-band" aria-label="Editorial image" ref={bandRef}>
+        <div className="band-track" ref={trackRef}>
+          {bandImages.map((src, i) => (
+            <img key={i} src={src} alt={`RepliFa editorial ${i + 1}`} />
+          ))}
+        </div>
         <div className="band-copy">
           <p>Only through authentic artifacts can the lost aesthetic be reconstructed and truly embodied.</p>
         </div>
