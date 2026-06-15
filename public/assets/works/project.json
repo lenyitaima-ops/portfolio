@@ -15,6 +15,11 @@
         "Pants: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheNew/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheNew/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheNew/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheNew/image/1.jpg",
         "additional": [
@@ -47,6 +52,11 @@
         "Shorts: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheTrench/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheTrench/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheTrench/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheTrench/image/1.jpg",
         "additional": [
@@ -77,6 +87,11 @@
         "Pants: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheDeconstructed/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheDeconstructed/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheDeconstructed/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheDeconstructed/image/1.jpg",
         "additional": [
@@ -106,6 +121,11 @@
         "Dress: double-sided twill fabric, 70% wool, 30% silk."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheSkeleprint/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheSkeleprint/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheSkeleprint/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheSkeleprint/image/1.jpg",
         "additional": [
@@ -137,6 +157,11 @@
         "Pants: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/ThePagoda/process/1.jpg",
+        "/assets/works/fashion/RepliFa/ThePagoda/process/2.jpg",
+        "/assets/works/fashion/RepliFa/ThePagoda/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/ThePagoda/image/1.jpg",
         "additional": [
@@ -169,6 +194,11 @@
         "Chaps: 100% silk gauze."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheMix/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheMix/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheMix/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheMix/image/1.jpg",
         "additional": [
@@ -201,6 +231,11 @@
         "Shorts: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheOld/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheOld/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheOld/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheOld/image/1.jpg",
         "additional": [
@@ -232,6 +267,11 @@
         "Shorts: 100% wool."
       ],
       "link": "",
+      "process": [
+        "/assets/works/fashion/RepliFa/TheFelt/process/1.jpg",
+        "/assets/works/fashion/RepliFa/TheFelt/process/2.jpg",
+        "/assets/works/fashion/RepliFa/TheFelt/process/3.jpg"
+      ],
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/TheFelt/image/1.jpg",
         "additional": [

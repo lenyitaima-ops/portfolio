@@ -1,8 +1,10 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './LookModal.css'
 
 const LookModal = ({ look, onClose }) => {
   const dialogRef = useRef(null)
+  const processRef = useRef(null)
+  const [processOpen, setProcessOpen] = useState(false)
 
   useEffect(() => {
     const dialog = dialogRef.current
@@ -13,19 +15,36 @@ const LookModal = ({ look, onClose }) => {
     } else {
       if (dialog.open) dialog.close()
       document.body.style.overflow = ''
+      setProcessOpen(false)
     }
     return () => { document.body.style.overflow = '' }
   }, [look])
 
   useEffect(() => {
-    const handler = (e) => { if (e.key === 'Escape') onClose() }
+    const dialog = processRef.current
+    if (!dialog) return
+    if (processOpen) {
+      if (!dialog.open) dialog.showModal()
+    } else if (dialog.open) {
+      dialog.close()
+    }
+  }, [processOpen])
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key !== 'Escape') return
+      if (processOpen) setProcessOpen(false)
+      else onClose()
+    }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
-  }, [onClose])
+  }, [onClose, processOpen])
 
   const images = look
     ? [look.filePath.main, ...(look.filePath.additional || [])]
     : []
+
+  const processImages = look?.process || []
 
   return (
     <dialog
@@ -67,9 +86,29 @@ const LookModal = ({ look, onClose }) => {
                 {look.linkLabels?.[0] || 'View project'}
               </a>
             )}
+            {processImages.length > 0 && (
+              <button className="modal-process-btn" onClick={() => setProcessOpen(true)}>
+                Check full Process
+              </button>
+            )}
           </div>
         </div>
       )}
+
+      <dialog
+        className="process-modal"
+        ref={processRef}
+        onCancel={(e) => { e.preventDefault(); setProcessOpen(false) }}
+        onClick={(e) => { if (e.target === processRef.current) setProcessOpen(false) }}
+      >
+        <div className="process-inner">
+          {processImages.map((src, i) => (
+            <div className="process-item" key={i}>
+              <img src={src} alt={`${look?.name || ''} process ${i + 1}`} />
+            </div>
+          ))}
+        </div>
+      </dialog>
     </dialog>
   )
 }
