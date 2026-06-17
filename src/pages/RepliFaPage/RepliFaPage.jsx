@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { createAnimatable } from 'animejs'
+import { createAnimatable, animate, stagger } from 'animejs'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './RepliFaPage.css'
@@ -29,6 +29,61 @@ const RepliFaPage = () => {
   const [selectedLook, setSelectedLook] = useState(null)
   const bandRef = useRef(null)
   const trackRef = useRef(null)
+  const videoRef = useRef(null)
+  const videoSectionRef = useRef(null)
+  const videoManualPause = useRef(false)
+  const featureVideoRef = useRef(null)
+  const featureSectionRef = useRef(null)
+  const featureManualPause = useRef(false)
+
+  const toggleVideo = () => {
+    const v = videoRef.current
+    if (!v) return
+    if (v.paused) { videoManualPause.current = false; v.play() }
+    else { videoManualPause.current = true; v.pause() }
+  }
+
+  const toggleFeatureVideo = () => {
+    const v = featureVideoRef.current
+    if (!v) return
+    if (v.paused) { featureManualPause.current = false; v.play() }
+    else { featureManualPause.current = true; v.pause() }
+  }
+
+  // Pause each video once its section scrolls out of view, resume when visible —
+  // but never auto-resume a video the user has manually paused.
+  useEffect(() => {
+    const items = [
+      { section: videoSectionRef.current, v: videoRef.current, manual: videoManualPause },
+      { section: featureSectionRef.current, v: featureVideoRef.current, manual: featureManualPause },
+    ].filter((i) => i.section && i.v)
+    if (items.length === 0) return
+
+    let frame = 0
+    const check = () => {
+      frame = 0
+      items.forEach(({ section, v, manual }) => {
+        const rect = section.getBoundingClientRect()
+        const inView = rect.bottom > 0 && rect.top < window.innerHeight
+        if (!inView) {
+          v.pause()
+        } else if (!manual.current) {
+          v.play().catch(() => {})
+        }
+      })
+    }
+    const onScroll = () => {
+      if (frame) return
+      frame = window.requestAnimationFrame(check)
+    }
+
+    check()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      if (frame) window.cancelAnimationFrame(frame)
+    }
+  }, [])
 
   useEffect(() => {
     const band = bandRef.current
@@ -68,6 +123,29 @@ const RepliFaPage = () => {
   }, [])
 
   useEffect(() => {
+    const statement = document.querySelector('#collection')
+    if (!statement) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          animate('#collection > *', {
+            opacity: [0, 1],
+            translateY: [24, 0],
+            delay: stagger(110, { start: 100 }),
+            duration: 850,
+            ease: 'out(3)',
+          })
+          observer.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.3 }
+    )
+    observer.observe(statement)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
     document.title = 'RepliFa — Len Yitai Ma'
 
     const loadLooks = async () => {
@@ -95,6 +173,17 @@ const RepliFaPage = () => {
 
   return (
     <div className="replifa-page">
+      <section className="replifa-video" ref={videoSectionRef} onClick={toggleVideo}>
+        <video
+          ref={videoRef}
+          src="/assets/works/fashion/RepliFa/Teaser.mp4"
+          autoPlay
+          loop
+          playsInline
+          onLoadedMetadata={(e) => { e.currentTarget.volume = 0.3 }}
+        />
+      </section>
+
       <div className="replifa-top">
         <Link className="back-link" to="/fashion">← Fashion</Link>
       </div>
@@ -119,15 +208,21 @@ const RepliFaPage = () => {
         </div>
       </section>
 
-      <section className="feature-look" id="feature">
+      <section className="feature-look" id="feature" ref={featureSectionRef}>
         <div className="feature-copy">
           <p className="eyebrow">Featured detail</p>
           <h2>Garment as structure, structure as argument.</h2>
           <p>The collection treats the “摆” not as a decorative extension, but as a structural device that can reshape the body’s outline, alter the language of authority, and carry cultural memory into contemporary styling.</p>
         </div>
-        <div className="feature-gallery">
-          <img src="/assets/works/fashion/RepliFa/ThePagoda/image/2.jpg" alt="Detail of Look 5 the Pagoda" />
-          <img src="/assets/works/fashion/RepliFa/TheDeconstructed/image/2.jpg" alt="Detail of Look 3 the Deconstructed" />
+        <div className="feature-gallery" onClick={toggleFeatureVideo}>
+          <video
+            ref={featureVideoRef}
+            src="/assets/works/fashion/RepliFa/Teaser2.mp4"
+            autoPlay
+            loop
+            playsInline
+            onLoadedMetadata={(e) => { e.currentTarget.volume = 0.3 }}
+          />
         </div>
       </section>
 

@@ -345,7 +345,7 @@
     },
     {
       "number": "Shoe 1",
-      "name": "Shoe 01",
+      "name": "1",
       "date": "",
       "category": ["Footwear"],
       "medium": "",
@@ -368,7 +368,7 @@
     },
     {
       "number": "Shoe 2",
-      "name": "Shoe 02",
+      "name": "2",
       "date": "",
       "category": ["Footwear"],
       "medium": "",
@@ -381,6 +381,52 @@
         "additional": [
           "/assets/works/fashion/Shoes/Shoe-02/image/2.jpg",
           "/assets/works/fashion/Shoes/Shoe-02/image/3.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full view",
+        "Detail",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Shoe 3",
+      "name": "3",
+      "date": "",
+      "category": ["Footwear"],
+      "medium": "",
+      "dimension": "",
+      "description": "Replace with this shoe's description.",
+      "materials": [],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/Shoes/Shoe-03/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/Shoes/Shoe-03/image/2.jpg",
+          "/assets/works/fashion/Shoes/Shoe-03/image/3.jpg"
+        ]
+      },
+      "imageCaptions": [
+        "Full view",
+        "Detail",
+        "Detail"
+      ]
+    },
+    {
+      "number": "Shoe 4",
+      "name": "4",
+      "date": "",
+      "category": ["Footwear"],
+      "medium": "",
+      "dimension": "",
+      "description": "Replace with this shoe's description.",
+      "materials": [],
+      "link": "",
+      "filePath": {
+        "main": "/assets/works/fashion/Shoes/Shoe-04/image/1.jpg",
+        "additional": [
+          "/assets/works/fashion/Shoes/Shoe-04/image/2.jpg",
+          "/assets/works/fashion/Shoes/Shoe-04/image/3.jpg"
         ]
       },
       "imageCaptions": [
