@@ -129,7 +129,7 @@ const RepliFaPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return
-          animate('#collection > *', {
+          animate('#collection .statement-copy > *', {
             opacity: [0, 1],
             translateY: [24, 0],
             delay: stagger(110, { start: 100 }),
@@ -189,12 +189,16 @@ const RepliFaPage = () => {
       </div>
 
       <section className="statement" id="collection">
-        <div className="section-number">01</div>
-        <div>
+        <div className="statement-media">
+          <div className="project-placeholder" />
+          <div className="project-placeholder" />
+        </div>
+        <div className="statement-copy">
+          <div className="section-number">01</div>
           <p className="eyebrow">Collection statement</p>
           <h2>RepliFa challenges the established eurocentric fashion system.</h2>
+          <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
         </div>
-        <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
       </section>
 
       <section className="editorial-band" aria-label="Editorial image" ref={bandRef}>
