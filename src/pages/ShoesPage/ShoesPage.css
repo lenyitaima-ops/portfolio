@@ -1,3 +1,24 @@
+.shoes-hero { position: relative; }
+.shoes-hero-media { position: relative; width: 100%; overflow: hidden; line-height: 0; }
+.shoes-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.6), rgba(0,0,0,.15) 44%, rgba(0,0,0,.35));
+}
+.shoes-hero-media img { width: 100%; height: auto; display: block; }
+.shoes-hero-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.shoes-hero-copy {
+  position: sticky;
+  top: 68vh;
+  max-width: 900px;
+  color: var(--paper);
+  padding: 0 min(9vw, 92px) 7vh;
+  pointer-events: auto;
+}
+.shoes-hero-copy h1 { margin: 0; color: var(--paper); }
+.shoes-hero-sub { margin: 20px 0 0; color: rgba(255,250,241,.82); font-size: clamp(18px, 2.1vw, 30px); letter-spacing: .04em; }
+
 .shoes-intro { position: relative; min-height: 100vh; overflow: hidden; display: flex; align-items: flex-end; }
 .shoes-intro > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .shoes-intro::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }

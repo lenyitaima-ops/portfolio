@@ -59,7 +59,7 @@
   border: 0;
   border-radius: 0;
   padding: 0;
-  background: rgba(255,255,255,.45);
+  background: transparent;
   backdrop-filter: blur(28px);
   overflow: hidden;
 }
@@ -69,8 +69,8 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-.process-item { overflow: hidden; }
 .process-item img { width: 100%; height: auto; display: block; }
 
 .modal-close {

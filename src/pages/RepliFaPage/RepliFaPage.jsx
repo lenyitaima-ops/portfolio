@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { createAnimatable, animate, stagger } from 'animejs'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
@@ -184,17 +183,12 @@ const RepliFaPage = () => {
         />
       </section>
 
-      <div className="replifa-top">
-        <Link className="back-link" to="/fashion">← Fashion</Link>
-      </div>
-
       <section className="statement" id="collection">
         <div className="statement-media">
-          <div className="project-placeholder" />
-          <div className="project-placeholder" />
+          <img src="/assets/works/fashion/RepliFa/7.jpeg" alt="RepliFa garment reference" />
+          <img src="/assets/works/fashion/RepliFa/6.jpg" alt="RepliFa garment reference" />
         </div>
         <div className="statement-copy">
-          <div className="section-number">01</div>
           <p className="eyebrow">Collection statement</p>
           <h2>RepliFa challenges the established eurocentric fashion system.</h2>
           <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
@@ -215,8 +209,7 @@ const RepliFaPage = () => {
       <section className="feature-look" id="feature" ref={featureSectionRef}>
         <div className="feature-copy">
           <p className="eyebrow">Featured detail</p>
-          <h2>Garment as structure, structure as argument.</h2>
-          <p>The collection treats the “摆” not as a decorative extension, but as a structural device that can reshape the body’s outline, alter the language of authority, and carry cultural memory into contemporary styling.</p>
+          <p>“Flare guard” (摆 bai) is one of the most distinctive structures in traditional Chinese garments. It transforms construction into an expression of power and becomes an independent structural signifier through which a new expression of power can be built free from Orientalist interpretation.</p>
         </div>
         <div className="feature-gallery" onClick={toggleFeatureVideo}>
           <video

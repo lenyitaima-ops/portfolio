@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { animate, stagger } from 'animejs'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './ShoesPage.css'
@@ -10,6 +11,14 @@ const ShoesPage = () => {
 
   useEffect(() => {
     document.title = 'Shoe Collection — Len Yitai Ma'
+
+    animate('.shoes-hero-copy > *', {
+      opacity: [0, 1],
+      translateY: [24, 0],
+      delay: stagger(110, { start: 200 }),
+      duration: 850,
+      ease: 'out(3)',
+    })
 
     const loadShoes = async () => {
       try {
@@ -26,6 +35,18 @@ const ShoesPage = () => {
 
   return (
     <div className="shoes-page">
+      <section className="shoes-hero" aria-label="RepliFa Shoe Collection cover">
+        <div className="shoes-hero-media">
+          <img src="/assets/works/fashion/Shoes/0.jpg" alt="RepliFa Shoe Collection" />
+        </div>
+        <div className="shoes-hero-overlay">
+          <div className="shoes-hero-copy">
+            <h1>RepliFa</h1>
+            <p className="shoes-hero-sub">Shoe Collection</p>
+          </div>
+        </div>
+      </section>
+
       <section className="shoes-intro">
         <img src="/assets/works/fashion/Shoes/2.jpg" alt="Mawangdui Han tomb excavation" />
         <Link className="back-link shoes-back" to="/fashion">← Fashion</Link>
@@ -69,7 +90,7 @@ const ShoesPage = () => {
 
         <div className="shoes-grid">
           {shoes.map((shoe) => (
-            <LookCard key={shoe.number} look={shoe} onOpen={setSelected} />
+            <LookCard key={shoe.name} look={shoe} onOpen={setSelected} />
           ))}
         </div>
       </section>
