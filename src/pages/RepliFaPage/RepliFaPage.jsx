@@ -13,6 +13,29 @@ const bandImages = [
   '/assets/works/fashion/RepliFa/5.jpg',
 ]
 
+const galleryImages = [
+  '/assets/works/fashion/RepliFa/2.jpg',
+  '/assets/works/fashion/RepliFa/3.jpg',
+  '/assets/works/fashion/RepliFa/4.jpg',
+  '/assets/works/fashion/RepliFa/5.jpg',
+  '/assets/works/fashion/RepliFa/6.jpg',
+  '/assets/works/fashion/RepliFa/8.jpg',
+  '/assets/works/fashion/RepliFa/9.jpg',
+  '/assets/works/fashion/RepliFa/10.jpg',
+  '/assets/works/fashion/RepliFa/11.jpg',
+  '/assets/works/fashion/RepliFa/12.jpg',
+  '/assets/works/fashion/RepliFa/13.jpg',
+  '/assets/works/fashion/RepliFa/14.jpg',
+  '/assets/works/fashion/RepliFa/15.jpg',
+  '/assets/works/fashion/RepliFa/16.jpg',
+  '/assets/works/fashion/RepliFa/17.jpg',
+  '/assets/works/fashion/RepliFa/18.jpg',
+  '/assets/works/fashion/RepliFa/19.jpg',
+  '/assets/works/fashion/RepliFa/20.jpg',
+  '/assets/works/fashion/RepliFa/21.jpg',
+  '/assets/works/fashion/RepliFa/22.jpg',
+]
+
 const filters = [
   { key: 'all', label: 'All' },
   { key: 'Overlaped-Collared', label: 'Overlaped-Collared' },
@@ -247,6 +270,12 @@ const RepliFaPage = () => {
             <LookCard key={look.number} look={look} onOpen={setSelectedLook} />
           ))}
         </div>
+      </section>
+
+      <section className="replifa-gallery" aria-label="RepliFa gallery">
+        {galleryImages.map((src, i) => (
+          <img key={i} src={src} alt={`RepliFa ${i + 1}`} />
+        ))}
       </section>
 
       <LookModal look={selectedLook} onClose={() => setSelectedLook(null)} />
