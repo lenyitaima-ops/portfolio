@@ -18,7 +18,6 @@ const galleryImages = [
   '/assets/works/fashion/RepliFa/3.jpg',
   '/assets/works/fashion/RepliFa/4.jpg',
   '/assets/works/fashion/RepliFa/5.jpg',
-  '/assets/works/fashion/RepliFa/6.jpg',
   '/assets/works/fashion/RepliFa/8.jpg',
   '/assets/works/fashion/RepliFa/9.jpg',
   '/assets/works/fashion/RepliFa/10.jpg',
@@ -273,6 +272,7 @@ const RepliFaPage = () => {
       </section>
 
       <section className="replifa-gallery" aria-label="RepliFa gallery">
+        <p className="gallery-heading">More images</p>
         {galleryImages.map((src, i) => (
           <img key={i} src={src} alt={`RepliFa ${i + 1}`} />
         ))}
