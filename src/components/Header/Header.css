@@ -14,8 +14,8 @@
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
 }
 .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: .24em; }
-.brand span { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--ink); }
-.brand small { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+.brand span { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; color: var(--ink); }
+.brand small { font-size: 0.625rem; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav a, .nav-trigger, .nav-toggle, .nav .pill {
   border: 1px solid transparent;

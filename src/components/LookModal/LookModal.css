@@ -17,7 +17,7 @@
 .modal-images { height: 100%; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
 .modal-images figure { margin: 0; }
 .modal-images img { width: 100%; height: auto; display: block; }
-.modal-images figcaption { padding: 8px 12px 4px; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.modal-images figcaption { padding: 8px 12px 4px; color: var(--muted); font-size: 0.6875rem; letter-spacing: .12em; text-transform: uppercase; }
 
 .modal-copy {
   height: 100%;
@@ -30,10 +30,10 @@
 }
 .modal-copy, .modal-copy * { color: var(--ink); }
 .modal-copy .eyebrow { color: var(--muted); }
-.modal-copy h2 { font-size: clamp(38px, 4vw, 60px); margin-bottom: 4px; color: var(--ink); }
+.modal-copy h2 { font-size: clamp(2.375rem, 4vw, 3.75rem); margin-bottom: 4px; color: var(--ink); }
 .modal-copy .modal-meta { color: var(--ink); font-weight: 700; margin: 8px 0 18px; }
-.modal-copy p { color: var(--muted); line-height: 1.6; font-size: 17px; }
-.modal-copy h3 { margin-top: 28px; font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--ink); }
+.modal-copy p { color: var(--muted); line-height: 1.6; font-size: 1.0625rem; }
+.modal-copy h3 { margin-top: 28px; font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; font-size: 0.75rem; color: var(--ink); }
 .modal-copy ul { padding-left: 18px; color: var(--muted); line-height: 1.6; }
 .modal-link { display: inline-block; margin-top: 24px; padding: 10px 18px; border: 1px solid var(--line); border-radius: 0; color: var(--ink); }
 .modal-process-btn {
@@ -85,7 +85,7 @@
   background: rgba(255,255,255,.85);
   backdrop-filter: blur(8px);
   cursor: pointer;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 1;
 }
 

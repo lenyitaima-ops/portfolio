@@ -85,16 +85,16 @@ button { font: inherit; }
   letter-spacing: .28em;
   text-transform: uppercase;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 h1 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(64px, 15vw, 220px);
+  font-size: clamp(4rem, 15vw, 13.75rem);
   line-height: .78;
   letter-spacing: .13em;
 }
-h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 5vw, 72px); line-height: .98; }
+h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(2.125rem, 5vw, 4.5rem); line-height: .98; }
 
 .button {
   display: inline-flex;
@@ -107,3 +107,10 @@ h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(34
 }
 .button.primary { background: var(--paper); color: var(--ink); }
 .button.secondary { color: var(--paper); }
+
+/* Typography is sized in rem, so one rule scales the whole site down a notch
+   on screens below 1080p (narrower than 1920px). */
+html { font-size: 16px; }
+@media (max-width: 1919px) {
+  html { font-size: 14.5px; }
+}

@@ -1,6 +1,6 @@
 .fashion-section { padding: clamp(120px, 11vw, 170px) clamp(18px, 5vw, 80px) clamp(76px, 11vw, 140px); }
 .section-heading { max-width: 840px; margin-bottom: 34px; }
-.section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }
 
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 
