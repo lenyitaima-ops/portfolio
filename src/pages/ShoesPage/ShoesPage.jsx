@@ -33,6 +33,15 @@ const ShoesPage = () => {
     loadShoes()
   }, [])
 
+  // Pause card videos while a look is open in the lightroom, resume on close.
+  useEffect(() => {
+    const videos = document.querySelectorAll('.shoes-grid video')
+    videos.forEach((v) => {
+      if (selected) v.pause()
+      else v.play().catch(() => {})
+    })
+  }, [selected])
+
   return (
     <div className="shoes-page">
       <section className="shoes-hero" aria-label="RepliFa Shoe Collection cover">

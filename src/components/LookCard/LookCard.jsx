@@ -11,7 +11,19 @@ const LookCard = ({ look, onOpen }) => {
       onKeyDown={(e) => { if (e.key === 'Enter') onOpen(look) }}
     >
       <figure>
-        <img src={look.filePath.additional?.[0] || look.filePath.main} alt={`${look.number} ${look.name}`} loading="lazy" />
+        {look.cardVideo ? (
+          <video
+            src={look.cardVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            tabIndex={-1}
+            aria-label={`${look.name} preview`}
+          />
+        ) : (
+          <img src={look.filePath.additional?.[0] || look.filePath.main} alt={`${look.number} ${look.name}`} loading="lazy" />
+        )}
       </figure>
       <div className="look-card-content">
         <small>{look.number}</small>

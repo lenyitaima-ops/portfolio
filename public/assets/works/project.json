@@ -419,6 +419,7 @@
       "description": "Replace with this shoe's description.",
       "materials": [],
       "link": "",
+      "cardVideo": "/assets/works/fashion/Shoes/Shoe-01/video/1.mp4",
       "filePath": {
         "main": "/assets/works/fashion/Shoes/Shoe-01/image/1.jpg",
         "additional": [
@@ -442,6 +443,7 @@
       "description": "Replace with this shoe's description.",
       "materials": [],
       "link": "",
+      "cardVideo": "/assets/works/fashion/Shoes/Shoe-02/video/2.mp4",
       "filePath": {
         "main": "/assets/works/fashion/Shoes/Shoe-02/image/1.jpg",
         "additional": [
@@ -465,6 +467,7 @@
       "description": "Replace with this shoe's description.",
       "materials": [],
       "link": "",
+      "cardVideo": "/assets/works/fashion/Shoes/Shoe-03/video/3.mp4",
       "filePath": {
         "main": "/assets/works/fashion/Shoes/Shoe-03/image/1.jpg",
         "additional": [
@@ -488,6 +491,7 @@
       "description": "Replace with this shoe's description.",
       "materials": [],
       "link": "",
+      "cardVideo": "/assets/works/fashion/Shoes/Shoe-04/video/4.mp4",
       "filePath": {
         "main": "/assets/works/fashion/Shoes/Shoe-04/image/1.jpg",
         "additional": [
