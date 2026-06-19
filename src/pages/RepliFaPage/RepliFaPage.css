@@ -32,7 +32,7 @@
 .band-track img { height: 100%; width: auto; display: block; object-fit: cover; opacity: .58; filter: saturate(.88); }
 .editorial-band::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.25); z-index: 1; pointer-events: none; }
 .band-copy { position: relative; z-index: 2; max-width: 1180px; text-align: center; padding: 60px 24px; color: var(--paper); }
-.band-copy p { font-family: var(--serif); font-size: clamp(36px, 6vw, 82px); line-height: .95; margin: 0; }
+.band-copy p { font-family: var(--sans); font-size: clamp(36px, 6vw, 82px); line-height: .95; margin: 0; }
 
 .feature-look {
   display: grid;
@@ -50,6 +50,7 @@
 
 .replifa-section { padding: clamp(76px, 11vw, 140px) clamp(18px, 5vw, 80px); }
 .section-heading { max-width: 840px; margin-bottom: 34px; }
+.section-heading h2 { font-family: var(--sans); }
 .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.6; }
 .filter-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
 .filter {

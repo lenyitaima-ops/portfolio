@@ -52,7 +52,7 @@
 .modal-process-btn:hover { background: var(--ink); color: var(--paper); }
 
 .process-modal {
-  width: min(1400px, calc(100vw - 24px));
+  width: min(1000px, calc(100vw - 24px));
   height: min(94vh, 1040px);
   max-width: none;
   max-height: none;

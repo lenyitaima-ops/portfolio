@@ -247,7 +247,6 @@ const RepliFaPage = () => {
 
       <section className="replifa-section" id="replifa">
         <div className="section-heading">
-          <p className="eyebrow">Selected looks</p>
           <h2>Eight looks from RepliFa</h2>
           <p>Each look translates historical Chinese garment logic into a contemporary fashion language through structure, silhouette, fabric, and proportion.</p>
         </div>
