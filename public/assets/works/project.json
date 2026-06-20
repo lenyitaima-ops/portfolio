@@ -29,11 +29,14 @@
           "/assets/works/fashion/RepliFa/TheNew/image/2.jpg",
           "/assets/works/fashion/RepliFa/TheNew/image/3.jpg",
           "/assets/works/fashion/RepliFa/TheNew/image/4.jpg",
-          "/assets/works/fashion/RepliFa/TheNew/image/5.jpg"
+          "/assets/works/fashion/RepliFa/TheNew/image/5.jpg",
+          "/assets/works/fashion/RepliFa/TheNew/image/6.jpg",
+          "/assets/works/fashion/RepliFa/TheNew/image/7.jpg"
         ]
       },
       "imageCaptions": [
         "Full look",
+        "Detail",
         "Detail",
         "Detail",
         "Detail",
@@ -70,11 +73,19 @@
         "additional": [
           "/assets/works/fashion/RepliFa/TheTrench/image/2.jpg",
           "/assets/works/fashion/RepliFa/TheTrench/image/3.jpg",
-          "/assets/works/fashion/RepliFa/TheTrench/image/4.jpg"
+          "/assets/works/fashion/RepliFa/TheTrench/image/4.jpg",
+          "/assets/works/fashion/RepliFa/TheTrench/image/5.jpg",
+          "/assets/works/fashion/RepliFa/TheTrench/image/6.jpg",
+          "/assets/works/fashion/RepliFa/TheTrench/image/7.jpg",
+          "/assets/works/fashion/RepliFa/TheTrench/image/8.jpg"
         ]
       },
       "imageCaptions": [
         "Full look",
+        "Detail",
+        "Detail",
+        "Detail",
+        "Detail",
         "Detail",
         "Detail",
         "Detail"

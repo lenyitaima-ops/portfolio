@@ -247,8 +247,14 @@ const RepliFaPage = () => {
 
       <section className="replifa-section" id="replifa">
         <div className="section-heading">
-          <h2>Eight looks from RepliFa</h2>
-          <p>Each look translates historical Chinese garment logic into a contemporary fashion language through structure, silhouette, fabric, and proportion.</p>
+          <div className="section-heading-text">
+            <h2>Eight looks from RepliFa</h2>
+            <p>Each look translates historical Chinese garment logic into a contemporary fashion language through structure, silhouette, fabric, and proportion.</p>
+          </div>
+          <div className="section-actions">
+            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/fullLook.pdf" download>Download Full Look Book</a>
+            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/portfolio.pdf" download>Download Portfolio</a>
+          </div>
         </div>
 
         <div className="filter-row" role="tablist" aria-label="Filter looks">
