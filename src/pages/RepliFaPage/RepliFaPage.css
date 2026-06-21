@@ -49,16 +49,16 @@
 .feature-gallery video { width: 100%; height: auto; display: block; cursor: pointer; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
 
 .replifa-section { padding: clamp(76px, 11vw, 140px) clamp(18px, 5vw, 80px); }
-.section-heading {
+.replifa-section .section-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
   margin-bottom: 34px;
 }
-.section-heading-text { max-width: 840px; }
-.section-heading h2 { font-family: var(--sans); }
-.section-actions { display: flex; flex-direction: row; gap: 10px; flex-shrink: 0; }
+.replifa-section .section-heading-text { max-width: 840px; }
+.replifa-section .section-heading h2 { font-family: var(--sans); }
+.replifa-section .section-actions { display: flex; flex-direction: row; gap: 10px; flex-shrink: 0; }
 .download-btn {
   display: inline-block;
   padding: 12px 20px;
@@ -71,10 +71,10 @@
 .download-btn:hover { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 760px) {
-  .section-heading { flex-direction: column; align-items: flex-start; }
-  .section-actions { flex-direction: row; flex-wrap: wrap; }
+  .replifa-section .section-heading { flex-direction: column; align-items: flex-start; }
+  .replifa-section .section-actions { flex-direction: row; flex-wrap: wrap; }
 }
-.section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }
+.replifa-section .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }
 .filter-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
 .filter {
   border: 1px solid var(--line);

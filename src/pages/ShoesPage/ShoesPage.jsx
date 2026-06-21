@@ -33,12 +33,19 @@ const ShoesPage = () => {
     loadShoes()
   }, [])
 
-  // Pause card videos while a look is open in the lightroom, resume on close.
+  // Pause + hide card videos while a look is open in the lightroom. Playing
+  // videos sit on their own GPU layer that backdrop-filter can't blur, so they
+  // must be hidden for the modal's frosted backdrop to read correctly.
   useEffect(() => {
     const videos = document.querySelectorAll('.shoes-grid video')
     videos.forEach((v) => {
-      if (selected) v.pause()
-      else v.play().catch(() => {})
+      if (selected) {
+        v.pause()
+        v.style.visibility = 'hidden'
+      } else {
+        v.style.visibility = ''
+        v.play().catch(() => {})
+      }
     })
   }, [selected])
 
@@ -78,21 +85,8 @@ const ShoesPage = () => {
         </div>
       </section>
 
-      <section className="feature-look">
-        <div className="feature-copy">
-          <p className="eyebrow">Section three</p>
-          <h2>Feature heading placeholder.</h2>
-          <p>Placeholder copy — content coming soon.</p>
-        </div>
-        <div className="feature-gallery">
-          <div className="project-placeholder" />
-          <div className="project-placeholder" />
-        </div>
-      </section>
-
       <section className="shoes-section" id="shoes">
         <div className="section-heading">
-          <p className="eyebrow">Footwear</p>
           <h2>RepliFa Shoe Collection</h2>
           <p>Footwear developed alongside the RepliFa collection.</p>
         </div>
