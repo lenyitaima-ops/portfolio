@@ -6,6 +6,7 @@ import RepliFaPage from './pages/RepliFaPage/RepliFaPage'
 import PerfumePage from './pages/PerfumePage/PerfumePage'
 import ShoesPage from './pages/ShoesPage/ShoesPage'
 import PhotographyPage from './pages/PhotographyPage/PhotographyPage'
+import PhotoSeriesPage from './pages/PhotoSeriesPage/PhotoSeriesPage'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/fashion/perfume" element={<PerfumePage />} />
           <Route path="/fashion/shoes" element={<ShoesPage />} />
           <Route path="/photography" element={<PhotographyPage />} />
+          <Route path="/photography/:slug" element={<PhotoSeriesPage />} />
         </Routes>
       </div>
     </Router>

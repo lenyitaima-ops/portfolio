@@ -578,16 +578,24 @@
     }
   ],
   "photography": [
-    "/assets/works/photography/image/1.jpg",
-    "/assets/works/photography/image/2.jpg",
-    "/assets/works/photography/image/3.jpg",
-    "/assets/works/photography/image/4.jpg",
-    "/assets/works/photography/image/5.jpg",
-    "/assets/works/photography/image/6.jpg",
-    "/assets/works/photography/image/7.jpg",
-    "/assets/works/photography/image/8.jpg",
-    "/assets/works/photography/image/9.jpg",
-    "/assets/works/photography/image/10.jpg",
-    "/assets/works/photography/image/11.jpg"
+    {
+      "name": "Series 01",
+      "slug": "series-01",
+      "caption": "Photography",
+      "cover": "/assets/works/photography/image/1.jpg",
+      "images": [
+        "/assets/works/photography/image/1.jpg",
+        "/assets/works/photography/image/2.jpg",
+        "/assets/works/photography/image/3.jpg",
+        "/assets/works/photography/image/4.jpg",
+        "/assets/works/photography/image/5.jpg",
+        "/assets/works/photography/image/6.jpg",
+        "/assets/works/photography/image/7.jpg",
+        "/assets/works/photography/image/8.jpg",
+        "/assets/works/photography/image/9.jpg",
+        "/assets/works/photography/image/10.jpg",
+        "/assets/works/photography/image/11.jpg"
+      ]
+    }
   ]
 }
