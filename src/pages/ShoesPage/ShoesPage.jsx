@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { animate, stagger } from 'animejs'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
@@ -65,7 +64,6 @@ const ShoesPage = () => {
 
       <section className="shoes-intro">
         <img src="/assets/works/fashion/Shoes/2.jpg" alt="Mawangdui Han tomb excavation" />
-        <Link className="back-link shoes-back" to="/fashion">← Fashion</Link>
         <div className="shoes-intro-copy">
           <p>The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.</p>
         </div>

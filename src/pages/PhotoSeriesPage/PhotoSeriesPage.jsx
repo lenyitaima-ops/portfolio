@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './PhotoSeriesPage.css'
 
 const PhotoSeriesPage = () => {
@@ -56,9 +56,6 @@ const PhotoSeriesPage = () => {
 
   return (
     <div className="photo-series-page">
-      <div className="photo-series-top">
-        <Link className="back-link" to="/photography">← Photography</Link>
-      </div>
       {groups.map((group, gi) => (
         <section className={`photo-band ${group.length === 1 ? 'single' : 'pair'}`} key={gi}>
           {group.map((src, idx) => (

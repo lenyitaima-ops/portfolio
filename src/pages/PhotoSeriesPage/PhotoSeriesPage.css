@@ -1,9 +1,6 @@
 .photo-series-page {
   min-height: 100vh;
 }
-.photo-series-top {
-  padding: clamp(96px, 12vw, 130px) clamp(24px, 6vw, 110px) 0;
-}
 
 .photo-band {
   min-height: 100vh;

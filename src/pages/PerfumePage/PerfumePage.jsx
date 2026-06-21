@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import ModelViewer from '../../components/ModelViewer/ModelViewer'
 import './PerfumePage.css'
 
@@ -16,7 +15,6 @@ const PerfumePage = () => {
     <div className="perfume-page">
       <section className="perfume-section">
         <div className="section-heading">
-          <Link className="back-link" to="/fashion">← Fashion</Link>
           <p className="eyebrow">Eau De Parfum</p>
           <h2>MER D'HIVER</h2>
           <p>A fragrance project — visual identity, posters, and product photography.</p>
