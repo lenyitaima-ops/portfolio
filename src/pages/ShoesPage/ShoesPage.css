@@ -16,7 +16,7 @@
   padding: 0 min(9vw, 92px) 7vh;
   pointer-events: auto;
 }
-.shoes-hero-copy h1 { margin: 0; color: var(--paper); }
+.shoes-hero-copy h1 { margin: 0; color: var(--paper); font-size: clamp(4rem, 8vw, 8rem); }
 .shoes-hero-sub { margin: 20px 0 0; color: rgba(255,250,241,.82); font-size: clamp(1.125rem, 2.1vw, 1.875rem); letter-spacing: .04em; }
 
 .shoes-intro { position: relative; min-height: 100vh; overflow: hidden; display: flex; align-items: flex-end; }

@@ -70,7 +70,7 @@ const LookModal = ({ look, onClose }) => {
             <p className="eyebrow">{look.number}</p>
             <h2>{look.name}</h2>
             {look.medium && <p className="modal-meta">{look.medium}</p>}
-            <p>{look.description}</p>
+            {look.description && <p>{look.description}</p>}
             {look.materials && look.materials.length > 0 && (
               <>
                 <h3>Materials</h3>

@@ -451,10 +451,13 @@
       "name": "Shoe 1",
       "date": "",
       "category": ["Footwear"],
-      "medium": "",
+      "medium": "Men's Size 8.5",
       "dimension": "",
-      "description": "Replace with this shoe's description.",
-      "materials": [],
+      "description": "",
+      "materials": [
+        "Coated Cow Leather",
+        "3cm heel"
+      ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-01/video/1.mp4",
       "filePath": {
@@ -477,10 +480,13 @@
       "name": "Shoe 2",
       "date": "",
       "category": ["Footwear"],
-      "medium": "",
+      "medium": "Women's Size 9",
       "dimension": "",
-      "description": "Replace with this shoe's description.",
-      "materials": [],
+      "description": "",
+      "materials": [
+        "Pebbled Calf Leather",
+        "13cm heel"
+      ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-02/video/2.mp4",
       "filePath": {
@@ -503,10 +509,13 @@
       "name": "Shoe 3",
       "date": "",
       "category": ["Footwear"],
-      "medium": "",
+      "medium": "Women's Size 9",
       "dimension": "",
-      "description": "Replace with this shoe's description.",
-      "materials": [],
+      "description": "",
+      "materials": [
+        "Pebbled Calf Leather",
+        "11cm heel"
+      ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-03/video/3.mp4",
       "filePath": {
@@ -529,10 +538,13 @@
       "name": "Shoe 4",
       "date": "",
       "category": ["Footwear"],
-      "medium": "",
+      "medium": "Men's Size 12",
       "dimension": "",
-      "description": "Replace with this shoe's description.",
-      "materials": [],
+      "description": "",
+      "materials": [
+        "Lambskin Leather",
+        "3cm heel"
+      ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-04/video/4.mp4",
       "filePath": {
@@ -552,13 +564,16 @@
     },
     {
       "number": "",
-      "name": "Shoe 5",
+      "name": "Prototype",
       "date": "",
       "category": ["Footwear"],
-      "medium": "",
+      "medium": "Men's Size 8",
       "dimension": "",
-      "description": "Replace with this shoe's description.",
-      "materials": [],
+      "description": "",
+      "materials": [
+        "Muslin",
+        "No heel"
+      ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-05/video/5.mp4",
       "filePath": {
@@ -579,9 +594,9 @@
   ],
   "photography": [
     {
-      "name": "Series 01",
+      "name": "Yongan Monastery",
       "slug": "series-01",
-      "caption": "Photography",
+      "caption": "Mural",
       "cover": "/assets/works/photography/image/1.jpg",
       "images": [
         "/assets/works/photography/image/1.jpg",
