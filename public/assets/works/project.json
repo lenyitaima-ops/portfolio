@@ -480,12 +480,12 @@
       "name": "Shoe 2",
       "date": "",
       "category": ["Footwear"],
-      "medium": "Women's Size 9",
+      "medium": "Men's Size 12",
       "dimension": "",
       "description": "",
       "materials": [
-        "Pebbled Calf Leather",
-        "13cm heel"
+        "Lambskin Leather",
+        "3cm heel"
       ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-02/video/2.mp4",
@@ -538,12 +538,12 @@
       "name": "Shoe 4",
       "date": "",
       "category": ["Footwear"],
-      "medium": "Men's Size 12",
+      "medium": "Women's Size 9",
       "dimension": "",
       "description": "",
       "materials": [
-        "Lambskin Leather",
-        "3cm heel"
+        "Pebbled Calf Leather",
+        "13cm heel"
       ],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-04/video/4.mp4",

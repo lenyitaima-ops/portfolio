@@ -42,10 +42,8 @@
   min-height: 80vh;
   align-items: stretch;
 }
-.shoes-split-left { position: relative; overflow: hidden; min-height: inherit; }
+.shoes-split-left { position: relative; overflow: hidden; min-height: inherit; display: flex; padding: clamp(28px, 5vw, 72px); }
 .shoes-split-left img {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -66,8 +64,7 @@
   min-height: inherit;
 }
 .shoes-split-rotated img {
-  width: min(72vh, 42vw);
-  height: 70vh;
+  height: 58vh;
   width: auto;
   display: block;
 }
