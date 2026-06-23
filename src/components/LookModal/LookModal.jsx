@@ -73,7 +73,7 @@ const LookModal = ({ look, onClose }) => {
             {look.description && <p>{look.description}</p>}
             {look.materials && look.materials.length > 0 && (
               <>
-                <h3>Materials</h3>
+                {!look.category?.includes('Footwear') && <h3>Materials</h3>}
                 <ul>
                   {look.materials.map((item, i) => (
                     <li key={i}>{item}</li>
