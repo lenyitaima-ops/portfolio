@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useLang } from './i18n.jsx'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
 import FashionPage from './pages/FashionPage/FashionPage'
@@ -10,9 +11,10 @@ import PhotoSeriesPage from './pages/PhotoSeriesPage/PhotoSeriesPage'
 import './App.css'
 
 function App() {
+  const { lang } = useLang()
   return (
     <Router>
-      <div className="App">
+      <div className={`App ${lang === 'zh' ? 'lang-zh' : ''}`}>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

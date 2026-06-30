@@ -1,10 +1,12 @@
 import { useRef } from 'react'
+import { useLang } from '../../i18n.jsx'
 import './ContactButton.css'
 
 const EMAIL = 'lenyitaima@gmail.com'
 
 const ContactButton = () => {
   const contactRef = useRef(null)
+  const { t } = useLang()
 
   const handleContact = async () => {
     try {
@@ -24,7 +26,7 @@ const ContactButton = () => {
 
   return (
     <>
-      <button className="pill" onClick={handleContact}>Contact</button>
+      <button className="pill" onClick={handleContact}>{t('nav.contact')}</button>
 
       <dialog
         className="contact-dialog"

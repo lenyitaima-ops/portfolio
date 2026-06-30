@@ -30,9 +30,20 @@
   font-size: clamp(1.125rem, 2.1vw, 1.875rem);
   line-height: 1.35;
   color: rgba(255,250,241,.82);
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+}
+.hero-tagline {
+  margin: 16px 0 0;
+  max-width: 690px;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  line-height: 1.5;
+  color: rgba(255,250,241,.85);
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+
+/* Chinese uses HarmonyOS since Copperplate has no CJK glyphs */
+.lang-zh .split-copy h2 { font-family: var(--sans); }
+.lang-zh .hero-tagline { margin-top: 2rem; }
 .scroll-note {
   position: absolute;
   right: 36px;

@@ -1,25 +1,34 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { useLang } from '../../i18n.jsx'
 import ContactButton from '../ContactButton/ContactButton'
 import './Header.css'
 
 const Header = () => {
   const { pathname } = useLocation()
+  const { t, setLang } = useLang()
   const lightHeader = pathname === '/' || pathname === '/fashion/shoes'
 
   return (
     <header className={`site-header ${lightHeader ? 'is-home' : ''}`} id="top">
       <Link className="brand" to="/" aria-label="Len Yitai Ma home">
-        <span>Len Yitai Ma</span>
+        <span>{t('brand')}</span>
       </Link>
       <nav className="nav" aria-label="Primary navigation">
         <div className="nav-dropdown">
-          <span className="nav-trigger">Works</span>
+          <span className="nav-trigger">{t('nav.works')}</span>
           <div className="nav-menu">
-            <NavLink to="/fashion">Fashion</NavLink>
-            <NavLink to="/photography">Photography</NavLink>
+            <NavLink to="/fashion">{t('nav.fashion')}</NavLink>
+            <NavLink to="/photography">{t('nav.photography')}</NavLink>
           </div>
         </div>
         <ContactButton />
+        <div className="nav-dropdown lang">
+          <span className="nav-trigger">{t('nav.language')}</span>
+          <div className="nav-menu">
+            <button type="button" onClick={() => setLang('en')}>English</button>
+            <button type="button" onClick={() => setLang('zh')}>中文</button>
+          </div>
+        </div>
       </nav>
     </header>
   )

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { createAnimatable, animate, stagger } from 'animejs'
+import { useLang } from '../../i18n.jsx'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './RepliFaPage.css'
@@ -45,6 +46,7 @@ const filters = [
 ]
 
 const RepliFaPage = () => {
+  const { t } = useLang()
   const [looks, setLooks] = useState([])
   const [activeFilter, setActiveFilter] = useState('all')
   const [selectedLook, setSelectedLook] = useState(null)
@@ -211,9 +213,9 @@ const RepliFaPage = () => {
           <img src="/assets/works/fashion/RepliFa/6.jpg" alt="RepliFa garment reference" />
         </div>
         <div className="statement-copy">
-          <p className="eyebrow">Collection statement</p>
-          <h2>RepliFa challenges the established eurocentric fashion system.</h2>
-          <p className="large-text">It questions authority at a fundamental level: the philosophy of the body, modes of representation, and the historical forces that have subtly shaped how people understand garments.</p>
+          <p className="eyebrow">{t('replifa.statementEyebrow')}</p>
+          <h2>{t('replifa.statementH2')}</h2>
+          <p className="large-text">{t('replifa.statementBody')}</p>
         </div>
       </section>
 
@@ -224,14 +226,14 @@ const RepliFaPage = () => {
           ))}
         </div>
         <div className="band-copy">
-          <p>Only through authentic artifacts can the lost aesthetic be reconstructed and truly embodied.</p>
+          <p>{t('replifa.bandCopy')}</p>
         </div>
       </section>
 
       <section className="feature-look" id="feature" ref={featureSectionRef}>
         <div className="feature-copy">
-          <p className="eyebrow">Featured detail</p>
-          <p>“Flare guard” (摆 bai) is one of the most distinctive structures in traditional Chinese garments. It transforms construction into an expression of power and becomes an independent structural signifier through which a new expression of power can be built free from Orientalist interpretation.</p>
+          <p className="eyebrow">{t('replifa.featureEyebrow')}</p>
+          <p>{t('replifa.featureBody')}</p>
         </div>
         <div className="feature-gallery" onClick={toggleFeatureVideo}>
           <video

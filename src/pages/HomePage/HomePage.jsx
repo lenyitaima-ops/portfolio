@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { animate, stagger } from 'animejs'
+import { useLang } from '../../i18n.jsx'
 import './HomePage.css'
 
 const HomePage = () => {
+  const { t } = useLang()
   useEffect(() => {
     document.title = 'Len Yitai Ma'
 
@@ -48,11 +50,12 @@ const HomePage = () => {
         </div>
         <div className="hero-overlay">
           <div className="hero-copy">
-            <p className="eyebrow">Fashion BFA Thesis Collection</p>
+            <p className="eyebrow">{t('home.eyebrow')}</p>
             <h1>RepliFa</h1>
-            <p className="hero-subtitle">A fashion portfolio exploring authentic Chinese aesthetics, garment structure, and the body beyond a eurocentric fashion system.</p>
+            {t('home.tagline') && <p className="hero-tagline">{t('home.tagline')}</p>}
+            <p className="hero-subtitle">{t('home.subtitle')}</p>
           <div className="hero-actions">
-            <Link to="/fashion" className="button primary">View Project</Link>
+            <Link to="/fashion" className="button primary">{t('home.cta')}</Link>
           </div>
           </div>
         </div>
@@ -64,13 +67,13 @@ const HomePage = () => {
           <img src="/assets/IMG_5375.jpg" alt="Designer in front of traditional Chinese architecture" />
         </div>
         <div className="split-copy">
-          <p className="eyebrow">Designer</p>
-          <h2>Len Yitai Ma</h2>
-          <p>With over 8 years of experience in wearing and researching traditional Chinese Han ethinicity's cloth, the designer’s understanding of authentic Chinese aesthetics goes far beyond clothes.</p>
-          <p>Yet extends to traditional architecture, pattern, accessories, and the broader rituals contexts behind. Grounded in rigorous academic knowledge, this understanding forms the foundation of the designer’s practice.</p>
+          <p className="eyebrow">{t('about.eyebrow')}</p>
+          <h2>{t('about.name')}</h2>
+          <p>{t('about.p1')}</p>
+          <p>{t('about.p2')}</p>
           <dl className="meta-list">
-            <div><dt>Practice</dt><dd>Fashion design, Photography</dd></div>
-            <div><dt>Software I use</dt><dd>Adobe Photoshop, Adobe Illustrator, Adobe InDesign, CLO 3D, Adobe Premiere Pro, DaVinci Resolve</dd></div>
+            <div><dt>{t('about.practiceLabel')}</dt><dd>{t('about.practiceValue')}</dd></div>
+            <div><dt>{t('about.softwareLabel')}</dt><dd>{t('about.softwareValue')}</dd></div>
           </dl>
         </div>
       </section>

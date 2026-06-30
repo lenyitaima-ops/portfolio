@@ -1,29 +1,32 @@
 import { useEffect } from 'react'
+import { useLang } from '../../i18n.jsx'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import './FashionPage.css'
 
-const projects = [
-  {
-    name: 'RepliFa',
-    path: '/fashion/replifa',
-    cover: '/assets/works/fashion/RepliFa/1.jpg',
-    caption: 'Fashion BFA Thesis Collection',
-  },
-  {
-    name: 'RepliFa Shoe Collection',
-    path: '/fashion/shoes',
-    cover: '/assets/works/fashion/Shoes/1.jpg',
-    caption: 'Footwear',
-  },
-  {
-    name: "MER D'HIVER",
-    path: '/fashion/perfume',
-    cover: '/assets/works/fashion/Perfume/image/1.jpg',
-    caption: 'Eau De Parfum',
-  },
-]
-
 const FashionPage = () => {
+  const { t } = useLang()
+
+  const projects = [
+    {
+      name: 'RepliFa',
+      path: '/fashion/replifa',
+      cover: '/assets/works/fashion/RepliFa/1.jpg',
+      caption: t('fashion.replifaCaption'),
+    },
+    {
+      name: 'RepliFa Shoe Collection',
+      path: '/fashion/shoes',
+      cover: '/assets/works/fashion/Shoes/1.jpg',
+      caption: t('fashion.shoesCaption'),
+    },
+    {
+      name: "MER D'HIVER",
+      path: '/fashion/perfume',
+      cover: '/assets/works/fashion/Perfume/image/1.jpg',
+      caption: t('fashion.perfumeCaption'),
+    },
+  ]
+
   useEffect(() => {
     document.title = 'Fashion — Len Yitai Ma'
   }, [])

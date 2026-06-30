@@ -15,6 +15,7 @@
 }
 .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: .24em; }
 .brand span { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; color: var(--ink); }
+.lang-zh .brand span { font-family: var(--sans); }
 .brand small { font-size: 0.625rem; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav a, .nav-trigger, .nav-toggle, .nav .pill {
@@ -64,3 +65,19 @@
 /* default (light-background pages): dark links; on home/credit the
    .is-home rules above make them light to match the header */
 .nav-menu a { color: var(--muted); }
+
+/* Language menu opens flush to the right since it sits at the header's edge */
+.nav-dropdown.lang .nav-menu { left: auto; right: 0; }
+.nav-menu button {
+  border: 1px solid transparent;
+  padding: 10px 14px;
+  text-align: left;
+  font: inherit;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  transition: color .35s ease, background .35s ease;
+}
+.nav-menu button:hover { color: var(--ink); background: rgba(0,0,0,.06); }
+.site-header.is-home .nav-menu button { color: var(--paper); }
+.site-header.is-home .nav-menu button:hover { color: var(--ink); background: var(--paper); }

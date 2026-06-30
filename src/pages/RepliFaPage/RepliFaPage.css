@@ -17,6 +17,7 @@
 .statement-media .project-placeholder { aspect-ratio: 3 / 4; }
 .statement-media img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 .statement-copy > * { opacity: 0; }
+.lang-zh .statement-copy h2 { font-family: var(--sans); }
 .section-number { font-family: var(--mono); font-weight: 800; color: var(--muted); margin-bottom: 20px; }
 .large-text { margin: 34px 0 0; font-size: clamp(1.125rem, 2vw, 1.5625rem); line-height: 1.45; color: var(--muted); }
 
