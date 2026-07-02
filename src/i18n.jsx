@@ -37,9 +37,39 @@ const translations = {
     'replifa.featureBody':
       '“Flare guard” (摆 bai) is one of the most distinctive structures in traditional Chinese garments. It transforms construction into an expression of power and becomes an independent structural signifier through which a new expression of power can be built free from Orientalist interpretation.',
 
+    'fashion.eyebrow': 'Fashion',
+    'fashion.projects': 'Projects',
+    'fashion.desc': 'Select a project to explore its looks, materials, and structure.',
     'fashion.replifaCaption': 'Fashion BFA Thesis Collection',
     'fashion.shoesCaption': 'Footwear',
     'fashion.perfumeCaption': 'Eau De Parfum',
+
+    'replifa.looksH2': 'Eight looks from RepliFa',
+    'replifa.looksDesc':
+      'Each look translates historical Chinese garment logic into a contemporary fashion language through structure, silhouette, fabric, and proportion.',
+    'replifa.filter.all': 'All',
+    'replifa.filter.overlaped': 'Overlaped-Collared',
+    'replifa.filter.round': 'Round-Collared',
+    'replifa.filter.flare': 'Flare Guard',
+    'replifa.filter.pattern': 'Traditional Pattern',
+    'replifa.filter.underlayer': 'Under Layer',
+    'replifa.downloadLookbook': 'Download Full Look Book',
+    'replifa.downloadPortfolio': 'Download Portfolio',
+    'replifa.moreImages': 'More images',
+
+    'shoes.tag': 'Footwear',
+    'shoes.introBody':
+      'The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.',
+    'shoes.looksH2': 'RepliFa Shoe Collection',
+    'shoes.looksDesc': 'Footwear developed alongside the RepliFa collection.',
+
+    'contact.eyebrow': 'Contact',
+    'contact.copied': 'Email address copied to clipboard',
+    'contact.wechat': 'wechat: Lenyitaima',
+    'contact.close': 'Close',
+
+    'modal.materials': 'Materials',
+    'modal.process': 'Check full Process',
   },
   zh: {
     'nav.works': '作品',
@@ -76,9 +106,39 @@ const translations = {
     'replifa.featureBody':
       '外摆，亦名“增耳”，是明代服饰中最具识别度的结构之一，它将原本服务于衣身的裁剪转化为一种权力表达。而在我所建立的体系中，“摆”不仅只是服装结构，也不用依附于西式裁剪所定义的权威语言；它成为一种独立的结构标识，用以重新建构属于东方服饰的权力表达。',
 
+    'fashion.eyebrow': '时尚',
+    'fashion.projects': '项目',
+    'fashion.desc': '点击项目以查看其造型、面料与结构。',
     'fashion.replifaCaption': '本科服装设计毕业设计',
     'fashion.shoesCaption': '鞋履',
     'fashion.perfumeCaption': '淡香水',
+
+    'replifa.looksH2': 'RepliFa 系列中的8套造型',
+    'replifa.looksDesc':
+      '每一套造型都以结构、廓形、面料与比例为媒介，将汉族的传统服饰的设计逻辑转译成当代时装语言。',
+    'replifa.filter.all': '全部',
+    'replifa.filter.overlaped': '交领',
+    'replifa.filter.round': '圆领',
+    'replifa.filter.flare': '出摆',
+    'replifa.filter.pattern': '传统纹样',
+    'replifa.filter.underlayer': '内搭',
+    'replifa.downloadLookbook': '下载Look Book',
+    'replifa.downloadPortfolio': '下载完整作品集',
+    'replifa.moreImages': '更多图片',
+
+    'shoes.tag': '鞋履',
+    'shoes.introBody':
+      '长沙马王堆汉墓保存了一整套丰富且完整的审美体系，而其中最具代表性、也对中国后世鞋履发展影响最为深远的，正是早期鞋履形态之一的歧头履。',
+    'shoes.looksH2': 'RepliFa 鞋履系列',
+    'shoes.looksDesc': '与 RepliFa 系列同期开发的鞋履。',
+
+    'contact.eyebrow': '联系',
+    'contact.copied': '邮箱地址已复制到剪贴板',
+    'contact.wechat': '微信：Lenyitaima',
+    'contact.close': '关闭',
+
+    'modal.materials': '面料成分',
+    'modal.process': '设计过程',
   },
 }
 

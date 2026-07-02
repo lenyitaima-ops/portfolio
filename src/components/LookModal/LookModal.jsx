@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
+import { useLang } from '../../i18n.jsx'
 import './LookModal.css'
 
 const LookModal = ({ look, onClose }) => {
+  const { lang, t } = useLang()
+  const zh = lang === 'zh'
   const dialogRef = useRef(null)
   const processRef = useRef(null)
   const [processOpen, setProcessOpen] = useState(false)
@@ -67,20 +70,28 @@ const LookModal = ({ look, onClose }) => {
             ))}
           </div>
           <div className="modal-copy">
-            <p className="eyebrow">{look.number}</p>
-            <h2>{look.name}</h2>
-            {look.medium && <p className="modal-meta">{look.medium}</p>}
-            {look.description && <p>{look.description}</p>}
-            {look.materials && look.materials.length > 0 && (
-              <>
-                {!look.category?.includes('Footwear') && <h3>Materials</h3>}
-                <ul>
-                  {look.materials.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </>
+            <p className="eyebrow">{zh && look.numberZh ? look.numberZh : look.number}</p>
+            <h2>{zh && look.nameZh ? look.nameZh : look.name}</h2>
+            {(zh && look.mediumZh ? look.mediumZh : look.medium) && (
+              <p className="modal-meta">{zh && look.mediumZh ? look.mediumZh : look.medium}</p>
             )}
+            {(zh && look.descriptionZh ? look.descriptionZh : look.description) && (
+              <p>{zh && look.descriptionZh ? look.descriptionZh : look.description}</p>
+            )}
+            {(() => {
+              const materials = zh && look.materialsZh ? look.materialsZh : look.materials
+              if (!materials || materials.length === 0) return null
+              return (
+                <>
+                  {!look.category?.includes('Footwear') && <h3>{t('modal.materials')}</h3>}
+                  <ul>
+                    {materials.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )
+            })()}
             {look.link && (
               <a className="modal-link" href={look.link} target="_blank" rel="noreferrer">
                 {look.linkLabels?.[0] || 'View project'}
@@ -88,7 +99,7 @@ const LookModal = ({ look, onClose }) => {
             )}
             {processImages.length > 0 && (
               <button className="modal-process-btn" onClick={() => setProcessOpen(true)}>
-                Check full Process
+                {t('modal.process')}
               </button>
             )}
           </div>

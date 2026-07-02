@@ -3,16 +3,26 @@
     {
       "number": "Look 1",
       "name": "The New",
+      "numberZh": "造型一",
+      "nameZh": "新",
       "date": "2025-05",
       "category": ["Traditional Pattern", "Round-Collared", "Flare Guard"],
       "medium": "From the collection of the Kong Family Mansion",
+      "mediumZh": "源自孔府旧藏。",
       "dimension": "",
       "description": "A round-collared jacket with an extra pair of detacheble peak laple-flare gurad(摆) styled with a fold-over collared shirt and Pants.",
+      "descriptionZh": "明制朝天摆圆领袍，并配有一对可拆卸的尖驳领式外摆，内搭明制翻领衫，下身搭配明制合裆裤。",
       "materials": [
         "Custom woven fabric: 70% wool, 30% silk, with a hidden Chinese jacquard cloud pattern.",
         "Lining: 100% silk gauze.",
         "Shirt: 98% cotton, 2% spandex.",
         "Pants: 100% wool."
+      ],
+      "materialsZh": [
+        "定制梭织面料：成分为70%羊毛与30%丝，并织有中式传统的四合如意暗云纹以及西式条纹。",
+        "里布：100% 12姆米真丝绡。",
+        "衬衫：98%棉与2%氨纶。",
+        "合裆裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -46,16 +56,26 @@
     {
       "number": "Look 2",
       "name": "The Trench",
+      "numberZh": "造型二",
+      "nameZh": "风衣",
       "date": "2025-05",
       "category": ["Traditional Pattern", "Flare Guard", "Overlaped-Collared"],
       "medium": "Bestowed by the Ming court upon Hideyoshi",
+      "mediumZh": "源自明神宗予丰臣秀吉赐服",
       "dimension": "",
       "description": "An overlapped-collar jacket with detachable oversized flared guard, styled with a fold-over collared shirt and wool shorts.",
+      "descriptionZh": "明制尖摆交领直身袍，配有一对可拆卸的超大外摆；内搭明制翻领衫，下身搭配唐制合裆短裤。",
       "materials": [
         "Jacket: double-sided satin fabric, 100% cotton.",
         "Lining: 100% silk satin with a hidden Chinese jacquard cloud pattern.",
         "Shirt: 70% cotton, 30% linen.",
         "Shorts: 100% wool."
+      ],
+      "materialsZh": [
+        "本布：双面缎面料，成分为100%棉。",
+        "里布：100%真丝缎，并织有传统中式四合如意杂宝暗云纹。",
+        "衬衫：70%棉与30%亚麻。",
+        "合裆裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -94,16 +114,26 @@
     {
       "number": "Look 3",
       "name": "The Deconstructed",
+      "numberZh": "造型三",
+      "nameZh": "解构",
       "date": "2025-04",
       "category": ["Traditional Pattern", "Round-Collared", "Flare Guard"],
       "medium": "From the collection of the Kong Family Mansion",
+      "mediumZh": "源自孔府旧藏",
       "dimension": "",
       "description": "A round-collared jacket with deconstructed flared guard, styled with a fold-over collared shirt and deconstructed asymmetrical-waist Pants.",
+      "descriptionZh": "明制圆领公服，配有一对未完全缝合的解构式外摆，内搭明制翻领衫，下身搭配明制解构式不对称腰头合裆长裤。",
       "materials": [
         "Jacket: chalk-stripe fabric, 100% wool.",
         "Lining: 100% silk gauze with a hidden Chinese jacquard lotus pattern.",
         "Shirt: 98% cotton, 2% spandex.",
         "Pants: 100% wool."
+      ],
+      "materialsZh": [
+        "本布：100%羊毛西式条纹面料。",
+        "里布：100%真丝纱，并织有中式传统的缠枝莲花纹。",
+        "衬衫：98%棉与2%氨纶。",
+        "合裆裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -142,13 +172,21 @@
     {
       "number": "Look 4",
       "name": "The Skeleprint",
+      "numberZh": "造型四",
+      "nameZh": "时间",
       "date": "2025-04",
       "category": ["Traditional Pattern", "Round-Collared", "Flare Guard"],
       "medium": "Prince Zhu Tan",
+      "mediumZh": "源自明鲁荒王朱檀墓",
       "dimension": "",
       "description": "An unassembled round-collared robe textile with a print derived from time-formed dye transfer.",
+      "descriptionZh": "以圆领半臂袍袍料为设计模版的长裙，经时间流逝造就了上层衣物的褪色渗透穿了这件棉衣袍料，形成了对称且酷似骨架的纹样。",
       "materials": [
         "Dress: double-sided twill fabric, 70% wool, 30% silk."
+      ],
+      "materialsZh": [
+        "本布：双面斜纹面料，成分为70%羊毛与30%丝。",
+        "里布：细条纹面料，成分为98%棉与2%氨纶。"
       ],
       "link": "",
       "process": [
@@ -185,15 +223,24 @@
     {
       "number": "Look 5",
       "name": "The Pagoda",
+      "numberZh": "造型五",
+      "nameZh": "宝塔肩",
       "date": "2025-03",
       "category": ["Overlaped-Collared", "Flare Guard"],
       "medium": "From the collection of the Kong Family Mansion",
+      "mediumZh": "源自孔府旧藏",
       "dimension": "",
       "description": "An overlapped-collar jacket with pagoda-sleeve-shaped flared guard, styled with a fold-over collared shirt and deconstructed crotch-seam Pants.",
+      "descriptionZh": "明制交领半臂衣（褡护），并配有一对宝塔肩袖廓形式外摆，内搭明制翻领衫，下身搭配明制解构式合裆长裤。",
       "materials": [
         "Jacket: 100% cotton.",
         "Shirt: 98% cotton, 2% spandex.",
         "Pants: 100% wool."
+      ],
+      "materialsZh": [
+        "褡护：100%高密仿皮质感洗水棉。",
+        "衬衫：98%棉与2%氨纶。",
+        "长裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -238,16 +285,26 @@
     {
       "number": "Look 6",
       "name": "The Mix",
+      "numberZh": "造型六",
+      "nameZh": "混搭",
       "date": "2025-03",
       "category": ["Round-Collared"],
       "medium": "A look mixed with Han, Tang, Song, Ming Dynasty.",
+      "mediumZh": "包含了汉、唐、宋、明四朝的混搭",
       "dimension": "",
       "description": "A short round-collared jacket, a round-overlapped-collar shirt, shorts, and chaps.",
+      "descriptionZh": "“混搭”包含一件明制圆领短衫，内搭汉制曲领衫，下身搭配唐制合裆短裤，并罩有一条宋制开裆裤。",
       "materials": [
-        "Jacket: 100% denim fabric.",
+        "Jacket: 8.2 oz cotton denim fabric.",
         "Shirt: 98% cotton, 2% spandex.",
-        "Shorts: 100% cotton denim.",
+        "Shorts: 8.2 oz cotton denim fabric.",
         "Chaps: 100% silk gauze."
+      ],
+      "materialsZh": [
+        "外套：100%棉制8.2盎司丹宁牛仔面料。",
+        "衬衫：98%棉与2%氨纶。",
+        "短裤：100%棉制8.2盎司丹宁牛仔面料。",
+        "开裆裤：100%20姆米真丝绡。"
       ],
       "link": "",
       "process": [
@@ -295,16 +352,26 @@
     {
       "number": "Look 7",
       "name": "The Old",
+      "numberZh": "造型七",
+      "nameZh": "旧",
       "date": "2025-02",
       "category": ["Flare Guard", "Overlaped-Collared"],
       "medium": "A minimalist design.",
+      "mediumZh": "一个极简的设计",
       "dimension": "",
       "description": "An overlapped-collar jacket and overlapped-collar yisa dress, styled with a fold-over collared shirt and shorts.",
+      "descriptionZh": "“旧”包含一件明制交领半壁衣（褡护）、一件明制交领褶子衣（曳撒），内搭明制翻领衫，下身搭配唐制合裆短裤。",
       "materials": [
         "Jacket: 100% silk gauze.",
         "Yisa: 100% cotton.",
         "Shirt: 70% cotton, 30% linen.",
         "Shorts: 100% wool."
+      ],
+      "materialsZh": [
+        "褡护：100%19姆米真丝绡。",
+        "曳撒：100%棉。",
+        "衬衫：70%棉与30%亚麻。",
+        "短裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -350,15 +417,24 @@
     {
       "number": "Look 8",
       "name": "The Felt",
+      "numberZh": "造型八",
+      "nameZh": "毡合",
       "date": "2025-02",
       "category": ["Round-Collared"],
       "medium": "From the collection of the Kong Family Mansion",
+      "mediumZh": "源自孔府旧藏",
       "dimension": "",
       "description": "A stand-round-collared jacket, styled with a fold-over collared shirt and shorts.",
+      "descriptionZh": "“毡合”包含一件明制竖领圆襟大衣，内搭明制翻领衫，下身搭配唐制合裆短裤。",
       "materials": [
         "Jacket: handmade felted fabric made from two different wool fabrics: double-sided wool and single-sided wool.",
         "Shirt: 70% cotton, 30% linen.",
         "Shorts: 100% wool."
+      ],
+      "materialsZh": [
+        "大衣：由两种不同羊毛面料手工毡合制成，分别为双面羊呢面料与单面羊毛面料。",
+        "衬衫：70%棉与30%亚麻。",
+        "短裤：100%羊毛。"
       ],
       "link": "",
       "process": [
@@ -449,6 +525,7 @@
     {
       "number": "",
       "name": "Shoe 1",
+      "nameZh": "男士皮鞋一",
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 8.5",
@@ -478,6 +555,7 @@
     {
       "number": "",
       "name": "Shoe 2",
+      "nameZh": "男士皮鞋二",
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 12",
@@ -507,6 +585,7 @@
     {
       "number": "",
       "name": "Shoe 3",
+      "nameZh": "女士高跟鞋一",
       "date": "",
       "category": ["Footwear"],
       "medium": "Women's Size 9",
@@ -536,6 +615,7 @@
     {
       "number": "",
       "name": "Shoe 4",
+      "nameZh": "女士高跟鞋二",
       "date": "",
       "category": ["Footwear"],
       "medium": "Women's Size 9",
@@ -565,6 +645,7 @@
     {
       "number": "",
       "name": "Prototype",
+      "nameZh": "文物复制品",
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 8",

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import { animate, stagger } from 'animejs'
+import { useLang } from '../../i18n.jsx'
 import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './ShoesPage.css'
 
 const ShoesPage = () => {
+  const { t } = useLang()
   const [shoes, setShoes] = useState([])
   const [selected, setSelected] = useState(null)
 
@@ -65,7 +67,7 @@ const ShoesPage = () => {
       <section className="shoes-intro">
         <img src="/assets/works/fashion/Shoes/2.jpg" alt="Mawangdui Han tomb excavation" />
         <div className="shoes-intro-copy">
-          <p>The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.</p>
+          <p>{t('shoes.introBody')}</p>
         </div>
       </section>
 
@@ -85,8 +87,8 @@ const ShoesPage = () => {
 
       <section className="shoes-section" id="shoes">
         <div className="section-heading">
-          <h2>RepliFa Shoe Collection</h2>
-          <p>Footwear developed alongside the RepliFa collection.</p>
+          <h2>{t('shoes.looksH2')}</h2>
+          <p>{t('shoes.looksDesc')}</p>
         </div>
 
         <div className="shoes-grid">

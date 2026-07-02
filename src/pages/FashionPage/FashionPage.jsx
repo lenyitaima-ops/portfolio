@@ -4,25 +4,25 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import './FashionPage.css'
 
 const FashionPage = () => {
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   const projects = [
     {
       name: 'RepliFa',
       path: '/fashion/replifa',
-      cover: '/assets/works/fashion/RepliFa/1.jpg',
+      cover: lang === 'zh' ? '/assets/works/fashion/RepliFa/23.jpg' : '/assets/works/fashion/RepliFa/1.jpg',
       caption: t('fashion.replifaCaption'),
     },
     {
       name: 'RepliFa Shoe Collection',
       path: '/fashion/shoes',
-      cover: '/assets/works/fashion/Shoes/1.jpg',
+      cover: lang === 'zh' ? '/assets/works/fashion/Shoes/6.jpg' : '/assets/works/fashion/Shoes/1.jpg',
       caption: t('fashion.shoesCaption'),
     },
     {
       name: "MER D'HIVER",
       path: '/fashion/perfume',
-      cover: '/assets/works/fashion/Perfume/image/1.jpg',
+      cover: '/assets/works/fashion/Perfume/10.jpg',
       caption: t('fashion.perfumeCaption'),
     },
   ]
@@ -35,9 +35,9 @@ const FashionPage = () => {
     <div className="fashion-page">
       <section className="fashion-section">
         <div className="section-heading">
-          <p className="eyebrow">Fashion</p>
-          <h2>Projects</h2>
-          <p>Select a project to explore its looks, materials, and structure.</p>
+          <p className="eyebrow">{t('fashion.eyebrow')}</p>
+          <h2>{t('fashion.projects')}</h2>
+          <p>{t('fashion.desc')}</p>
         </div>
 
         <div className="project-grid">

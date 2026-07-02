@@ -16,5 +16,6 @@
 .look-card-content { padding: 18px; }
 .look-card-content small { color: var(--muted); font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; }
 .look-card h3 { margin: 9px 0 10px; font-family: var(--serif); font-weight: 400; font-size: 1.8125rem; }
+.lang-zh .look-card h3 { font-family: var(--sans); }
 .tag-list { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
 .tag { font-size: 0.6875rem; color: var(--muted); border: 1px solid var(--line); border-radius: 0; padding: 5px 8px; }

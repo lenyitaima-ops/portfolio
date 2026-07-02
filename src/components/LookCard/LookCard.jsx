@@ -1,6 +1,20 @@
+import { useLang } from '../../i18n.jsx'
 import './LookCard.css'
 
+const CATEGORY_KEYS = {
+  'Overlaped-Collared': 'replifa.filter.overlaped',
+  'Round-Collared': 'replifa.filter.round',
+  'Flare Guard': 'replifa.filter.flare',
+  'Traditional Pattern': 'replifa.filter.pattern',
+  'Under Layer': 'replifa.filter.underlayer',
+  'Footwear': 'shoes.tag',
+}
+
 const LookCard = ({ look, onOpen }) => {
+  const { lang, t } = useLang()
+  const displayNumber = lang === 'zh' && look.numberZh ? look.numberZh : look.number
+  const displayName = lang === 'zh' && look.nameZh ? look.nameZh : look.name
+  const tagLabel = (tag) => (lang === 'zh' && CATEGORY_KEYS[tag] ? t(CATEGORY_KEYS[tag]) : tag)
   return (
     <article
       className="look-card"
@@ -26,11 +40,11 @@ const LookCard = ({ look, onOpen }) => {
         )}
       </figure>
       <div className="look-card-content">
-        <small>{look.number}</small>
-        <h3>{look.name}</h3>
+        <small>{displayNumber}</small>
+        <h3>{displayName}</h3>
         <div className="tag-list">
           {look.category.map((tag) => (
-            <span className="tag" key={tag}>{tag}</span>
+            <span className="tag" key={tag}>{tagLabel(tag)}</span>
           ))}
         </div>
       </div>

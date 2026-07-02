@@ -31,6 +31,7 @@
 .modal-copy, .modal-copy * { color: var(--ink); }
 .modal-copy .eyebrow { color: var(--muted); }
 .modal-copy h2 { font-size: clamp(2.375rem, 4vw, 2.7rem); margin-bottom: 4px; color: var(--ink); }
+.lang-zh .modal-copy h2 { font-family: var(--sans); }
 .modal-copy .modal-meta { color: var(--ink); font-weight: 700; margin: 8px 0 18px; }
 .modal-copy p { color: var(--muted); line-height: 1.6; font-size: 1.0625rem; }
 .modal-copy h3 { margin-top: 28px; font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; font-size: 0.75rem; color: var(--ink); }

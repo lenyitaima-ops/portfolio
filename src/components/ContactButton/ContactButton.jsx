@@ -34,11 +34,11 @@ const ContactButton = () => {
         onClick={(e) => { if (e.target === contactRef.current) closeContact() }}
       >
         <div className="contact-dialog-inner">
-          <p className="eyebrow">Contact</p>
-          <h2>Email address copied to clipboard</h2>
+          <p className="eyebrow">{t('contact.eyebrow')}</p>
+          <h2>{t('contact.copied')}</h2>
           <p className="contact-email">{EMAIL}</p>
-          <p className="contact-wechat">wechat: Lenyitaima</p>
-          <button className="contact-close" onClick={closeContact}>Close</button>
+          <p className="contact-wechat">{t('contact.wechat')}</p>
+          <button className="contact-close" onClick={closeContact}>{t('contact.close')}</button>
         </div>
       </dialog>
     </>

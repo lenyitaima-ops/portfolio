@@ -37,12 +37,12 @@ const galleryImages = [
 ]
 
 const filters = [
-  { key: 'all', label: 'All' },
-  { key: 'Overlaped-Collared', label: 'Overlaped-Collared' },
-  { key: 'Round-Collared', label: 'Round-Collared' },
-  { key: 'Flare Guard', label: 'Flare Guard' },
-  { key: 'Traditional Pattern', label: 'Traditional Pattern' },
-  { key: UNDER_LAYER, label: 'Under Layer' },
+  { key: 'all', tkey: 'replifa.filter.all' },
+  { key: 'Overlaped-Collared', tkey: 'replifa.filter.overlaped' },
+  { key: 'Round-Collared', tkey: 'replifa.filter.round' },
+  { key: 'Flare Guard', tkey: 'replifa.filter.flare' },
+  { key: 'Traditional Pattern', tkey: 'replifa.filter.pattern' },
+  { key: UNDER_LAYER, tkey: 'replifa.filter.underlayer' },
 ]
 
 const RepliFaPage = () => {
@@ -250,12 +250,12 @@ const RepliFaPage = () => {
       <section className="replifa-section" id="replifa">
         <div className="section-heading">
           <div className="section-heading-text">
-            <h2>Eight looks from RepliFa</h2>
-            <p>Each look translates historical Chinese garment logic into a contemporary fashion language through structure, silhouette, fabric, and proportion.</p>
+            <h2>{t('replifa.looksH2')}</h2>
+            <p>{t('replifa.looksDesc')}</p>
           </div>
           <div className="section-actions">
-            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/fullLook.pdf" download>Download Full Look Book</a>
-            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/portfolio.pdf" download>Download Portfolio</a>
+            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/fullLook.pdf" download>{t('replifa.downloadLookbook')}</a>
+            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/portfolio.pdf" download>{t('replifa.downloadPortfolio')}</a>
           </div>
         </div>
 
@@ -266,7 +266,7 @@ const RepliFaPage = () => {
               className={`filter ${activeFilter === f.key ? 'active' : ''}`}
               onClick={() => setActiveFilter(f.key)}
             >
-              {f.label}
+              {t(f.tkey)}
             </button>
           ))}
         </div>
@@ -279,7 +279,7 @@ const RepliFaPage = () => {
       </section>
 
       <section className="replifa-gallery" aria-label="RepliFa gallery">
-        <p className="gallery-heading">More images</p>
+        <p className="gallery-heading">{t('replifa.moreImages')}</p>
         {galleryImages.map((src, i) => (
           <img key={i} src={src} alt={`RepliFa ${i + 1}`} />
         ))}
