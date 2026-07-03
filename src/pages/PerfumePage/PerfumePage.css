@@ -79,6 +79,7 @@
 .perfume-block .reveal p:last-child { margin-top: 20px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }
 
 .lang-zh .perfume-block h2 { font-family: var(--sans); }
+.lang-zh .perfume-note-group h3 { font-family: var(--sans); }
 
 @media (max-width: 760px) {
   .perfume-hero-copy { position: absolute; top: auto; bottom: 0; padding-bottom: 6vh; }

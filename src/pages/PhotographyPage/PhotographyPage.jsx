@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import { useLang } from '../../i18n.jsx'
 import './PhotographyPage.css'
 
 const PhotographyPage = () => {
+  const { lang } = useLang()
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
@@ -34,10 +36,10 @@ const PhotographyPage = () => {
           {projects.map((project) => (
             <ProjectCard
               project={{
-                name: project.name,
+                name: lang === 'zh' && project.nameZh ? project.nameZh : project.name,
                 path: `/photography/${project.slug}`,
                 cover: project.cover,
-                caption: project.caption,
+                caption: lang === 'zh' && project.captionZh ? project.captionZh : project.caption,
               }}
               key={project.slug}
             />

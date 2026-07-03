@@ -14,7 +14,7 @@ const FashionPage = () => {
       caption: t('fashion.replifaCaption'),
     },
     {
-      name: 'RepliFa Shoe Collection',
+      name: lang === 'zh' ? 'Replifa鞋履延伸系列' : 'RepliFa Shoe Collection',
       path: '/fashion/shoes',
       cover: lang === 'zh' ? '/assets/works/fashion/Shoes/6.jpg' : '/assets/works/fashion/Shoes/1.jpg',
       caption: t('fashion.shoesCaption'),
@@ -22,7 +22,7 @@ const FashionPage = () => {
     {
       name: "MER D'HIVER",
       path: '/fashion/perfume',
-      cover: '/assets/works/fashion/Perfume/10.jpg',
+      cover: '/assets/works/fashion/Perfume/5.jpg',
       caption: t('fashion.perfumeCaption'),
     },
   ]

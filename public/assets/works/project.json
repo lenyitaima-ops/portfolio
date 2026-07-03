@@ -471,6 +471,7 @@
     {
       "number": "Under Layer 1",
       "name": "Under Layer 1",
+      "nameZh": "内搭一",
       "date": "",
       "category": ["Under Layer"],
       "medium": "",
@@ -498,6 +499,7 @@
     {
       "number": "Under Layer 2",
       "name": "Under Layer 2",
+      "nameZh": "内搭二",
       "date": "",
       "category": ["Under Layer"],
       "medium": "",
@@ -676,8 +678,10 @@
   "photography": [
     {
       "name": "Yongan Monastery",
+      "nameZh": "永安禅寺",
       "slug": "series-01",
       "caption": "Mural",
+      "captionZh": "壁画",
       "cover": "/assets/works/photography/project 1/1.jpg",
       "images": [
         "/assets/works/photography/project 1/1.jpg",
@@ -694,9 +698,11 @@
       ]
     },
     {
-      "name": "Project 2",
+      "name": "YI",
+      "nameZh": "弈",
       "slug": "series-02",
-      "caption": "Photography",
+      "caption": "Portrait",
+      "captionZh": "人像",
       "cover": "/assets/works/photography/project 2/2.jpg",
       "images": [
         "/assets/works/photography/project 2/1.jpg",
@@ -708,8 +714,10 @@
     },
     {
       "name": "MET",
+      "nameZh": "广胜寺",
       "slug": "series-03",
       "caption": "Mural",
+      "captionZh": "壁画",
       "cover": "/assets/works/photography/project 3/1.jpg",
       "images": [
         "/assets/works/photography/project 3/1.jpg",
@@ -720,6 +728,20 @@
         "/assets/works/photography/project 3/6.jpg",
         "/assets/works/photography/project 3/7.jpg",
         "/assets/works/photography/project 3/8.jpg"
+      ]
+    },
+    {
+      "name": "Street Photography 1",
+      "nameZh": "街头摄影1",
+      "slug": "series-04",
+      "caption": "Black & White",
+      "captionZh": "黑白",
+      "cover": "/assets/works/photography/project 4/1.jpg",
+      "images": [
+        "/assets/works/photography/project 4/1.jpg",
+        "/assets/works/photography/project 4/2.jpg",
+        "/assets/works/photography/project 4/3.jpg",
+        "/assets/works/photography/project 4/4.jpg"
       ]
     }
   ]
