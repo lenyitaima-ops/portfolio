@@ -64,6 +64,8 @@ const translations = {
       'The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.',
     'shoes.looksH2': 'RepliFa Shoe Collection',
     'shoes.looksDesc': 'Footwear developed alongside the RepliFa collection.',
+    'photography.title': 'Photography',
+    'photography.desc': 'Select a series to explore the full set of photographs.',
 
     'contact.eyebrow': 'Contact',
     'contact.copied': 'Email address copied to clipboard',
@@ -135,6 +137,8 @@ const translations = {
       '长沙马王堆汉墓保存了一整套丰富且完整的审美体系，而其中最具代表性、也对中国后世鞋履发展影响最为深远的，正是早期鞋履形态之一的歧头履。',
     'shoes.looksH2': 'RepliFa 鞋履系列',
     'shoes.looksDesc': '与 RepliFa 系列同期开发的鞋履。',
+    'photography.title': '摄影',
+    'photography.desc': '选择一个系列以浏览完整的摄影作品。',
 
     'contact.eyebrow': '联系',
     'contact.copied': '邮箱地址已复制到剪贴板',

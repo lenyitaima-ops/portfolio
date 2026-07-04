@@ -3,4 +3,5 @@
 }
 .photography-section { padding: clamp(120px, 11vw, 170px) clamp(18px, 5vw, 80px) clamp(76px, 11vw, 140px); }
 .photography-section .section-heading { max-width: 840px; margin-bottom: 34px; }
+.photography-section .section-heading h2 { font-family: var(--sans); }
 .photography-section .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }

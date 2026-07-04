@@ -4,7 +4,7 @@ import { useLang } from '../../i18n.jsx'
 import './PhotographyPage.css'
 
 const PhotographyPage = () => {
-  const { lang } = useLang()
+  const { lang, t } = useLang()
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
@@ -27,9 +27,8 @@ const PhotographyPage = () => {
     <div className="photography-page">
       <section className="photography-section">
         <div className="section-heading">
-          <p className="eyebrow">Photography</p>
-          <h2>Projects</h2>
-          <p>Select a series to explore the full set of photographs.</p>
+          <h2>{t('photography.title')}</h2>
+          <p>{t('photography.desc')}</p>
         </div>
 
         <div className="project-grid">

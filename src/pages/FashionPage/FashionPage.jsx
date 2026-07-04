@@ -35,8 +35,7 @@ const FashionPage = () => {
     <div className="fashion-page">
       <section className="fashion-section">
         <div className="section-heading">
-          <p className="eyebrow">{t('fashion.eyebrow')}</p>
-          <h2>{t('fashion.projects')}</h2>
+          <h2>{t('fashion.eyebrow')}</h2>
           <p>{t('fashion.desc')}</p>
         </div>
 
