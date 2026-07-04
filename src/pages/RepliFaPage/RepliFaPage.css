@@ -22,9 +22,21 @@
 .lang-zh .replifa-page .look-card h3 { font-family: var(--mincho); }
 .lang-zh .replifa-page .look-card small { font-family: var(--fangsong); }
 .lang-zh .replifa-page .modal-copy h2 { font-family: var(--mincho); }
-.lang-zh .replifa-page .modal-copy .eyebrow,
+.lang-zh .replifa-page .modal-copy .eyebrow { font-family: var(--mincho); }
 .lang-zh .replifa-page .modal-copy p:not(.eyebrow):not(.modal-meta),
 .lang-zh .replifa-page .modal-copy ul li { font-family: var(--fangsong); }
+.lang-zh .replifa-page .modal-copy p:not(.eyebrow):not(.modal-meta) { color: var(--ink); font-size: 1.25rem; }
+.lang-zh .replifa-page .modal-copy ul { font-size: 1.25rem; }
+.lang-zh .replifa-page .modal-copy h3 { font-size: 0.875rem; }
+.lang-zh .replifa-page .modal-copy .modal-meta {
+  font-family: var(--fangsong);
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
 .lang-zh .replifa-section .section-heading h2 { font-family: var(--mincho); }
 .lang-zh .replifa-section .section-heading-text p { font-family: var(--fangsong); }
 .lang-zh .replifa-page .band-copy p { font-family: var(--mincho); }
@@ -56,7 +68,7 @@
 }
 .feature-copy { align-self: center; }
 .feature-copy .eyebrow { color: var(--muted); }
-.feature-copy p:not(.eyebrow) { color: var(--muted); font-size: 1.125rem; line-height: 1.65; }
+.feature-copy p:not(.eyebrow) { color: var(--ink); font-size: 1.125rem; line-height: 1.65; }
 .feature-gallery { align-self: center; }
 .feature-gallery video { width: 100%; height: auto; display: block; cursor: pointer; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
 
