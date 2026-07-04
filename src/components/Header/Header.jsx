@@ -1,15 +1,30 @@
+import { useEffect, useRef } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useLang } from '../../i18n.jsx'
 import ContactButton from '../ContactButton/ContactButton'
 import './Header.css'
 
 const Header = () => {
+  const headerRef = useRef(null)
   const { pathname } = useLocation()
   const { t, setLang } = useLang()
   const lightHeader = pathname === '/' || pathname === '/fashion/shoes'
 
+  // Expose the header's real height as --header-h so pages can offset content
+  // below the fixed header. It updates on resize and when the text (e.g. the
+  // language switch) changes the header's height.
+  useEffect(() => {
+    const el = headerRef.current
+    if (!el) return
+    const update = () => document.documentElement.style.setProperty('--header-h', `${el.offsetHeight}px`)
+    update()
+    const observer = new ResizeObserver(update)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <header className={`site-header ${lightHeader ? 'is-home' : ''}`} id="top">
+    <header ref={headerRef} className={`site-header ${lightHeader ? 'is-home' : ''}`} id="top">
       <Link className="brand" to="/" aria-label="Len Yitai Ma home">
         <span>{t('brand')}</span>
       </Link>

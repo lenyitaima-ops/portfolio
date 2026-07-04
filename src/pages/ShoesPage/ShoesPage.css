@@ -88,9 +88,11 @@
   .shoes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
+  .shoes-intro { min-height: 65vh; }
   .shoes-split { grid-template-columns: 1fr; min-height: auto; }
-  .shoes-split-left { min-height: 60vh; }
-  .shoes-split-right { min-height: 70vh; }
-  .shoes-split-rotated img { width: min(60vh, 80vw); }
+  .shoes-split-left { min-height: auto; }
+  .shoes-split-left img { height: auto; object-fit: contain; }
+  .shoes-split-right { min-height: auto; }
+  .shoes-split-rotated img { height: auto; width: min(22vh, 32vw); }
   .shoes-grid { grid-template-columns: 1fr; }
 }

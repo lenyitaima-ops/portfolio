@@ -37,6 +37,8 @@
 .photo-band.single .photo-item img { max-width: min(72%, 1000px); }
 
 @media (max-width: 760px) {
+  .photo-band { min-height: 0; }
   .photo-band.pair { flex-direction: column; }
+  .photo-band.pair .photo-item { flex: none; width: 100%; }
   .photo-band.single .photo-item img { max-width: 100%; }
 }

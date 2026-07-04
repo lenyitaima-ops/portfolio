@@ -94,6 +94,6 @@
   .look-modal { height: 92vh; }
   .modal-inner { grid-template-columns: 1fr; grid-auto-rows: min-content; overflow-y: auto; }
   .modal-images { height: auto; overflow: visible; }
-  .modal-copy { height: auto; overflow: visible; }
+  .modal-copy { height: auto; overflow: visible; order: -1; }
   .process-modal { height: 92vh; }
 }
