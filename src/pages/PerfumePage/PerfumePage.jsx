@@ -60,7 +60,7 @@ const PerfumePage = () => {
           <div className="perfume-hero-copy reveal">
             <p className="eyebrow">Eau De Parfum</p>
             <h1>MER D'HIVER</h1>
-            <p className="perfume-hero-sub">{lang === 'zh' ? '记忆的衍生——冬日海' : 'Placeholder subtitle — introductory copy for the fragrance project.'}</p>
+            <p className="perfume-hero-sub">{lang === 'zh' ? '记忆的衍生—冬日海' : 'An extension of memory'}</p>
           </div>
         </div>
       </section>

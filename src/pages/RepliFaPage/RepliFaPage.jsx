@@ -46,7 +46,7 @@ const filters = [
 ]
 
 const RepliFaPage = () => {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [looks, setLooks] = useState([])
   const [activeFilter, setActiveFilter] = useState('all')
   const [selectedLook, setSelectedLook] = useState(null)
@@ -254,8 +254,8 @@ const RepliFaPage = () => {
             <p>{t('replifa.looksDesc')}</p>
           </div>
           <div className="section-actions">
-            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/fullLook.pdf" download>{t('replifa.downloadLookbook')}</a>
-            <a className="download-btn" href="/assets/works/fashion/RepliFa/pdfs/portfolio.pdf" download>{t('replifa.downloadPortfolio')}</a>
+            <a className="download-btn" href={lang === 'zh' ? '/assets/works/fashion/RepliFa/pdfs/fullLookChinese.pdf' : '/assets/works/fashion/RepliFa/pdfs/fullLook.pdf'} download>{t('replifa.downloadLookbook')}</a>
+            <a className="download-btn" href={lang === 'zh' ? '/assets/works/fashion/RepliFa/pdfs/portfolioChinese.pdf' : '/assets/works/fashion/RepliFa/pdfs/portfolio.pdf'} download>{t('replifa.downloadPortfolio')}</a>
           </div>
         </div>
 

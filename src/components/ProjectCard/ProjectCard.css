@@ -15,4 +15,4 @@
 .project-card-content { padding: 18px 20px; }
 .project-card-content h3 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: 1.875rem; }
 .project-card-content small { color: var(--muted); font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase; }
-.lang-zh .project-card-content h3 { font-family: var(--sans); }
+.project-card-content h3 .cjk { font-family: var(--sans); }

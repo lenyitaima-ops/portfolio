@@ -17,7 +17,18 @@
 .statement-media .project-placeholder { aspect-ratio: 3 / 4; }
 .statement-media img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 .statement-copy > * { opacity: 0; }
-.lang-zh .statement-copy h2 { font-family: var(--sans); }
+.lang-zh .statement-copy h2 { font-family: var(--mincho); }
+.lang-zh .statement-copy .large-text { font-family: var(--fangsong); }
+.lang-zh .replifa-page .look-card h3 { font-family: var(--mincho); }
+.lang-zh .replifa-page .look-card small { font-family: var(--fangsong); }
+.lang-zh .replifa-page .modal-copy h2 { font-family: var(--mincho); }
+.lang-zh .replifa-page .modal-copy .eyebrow,
+.lang-zh .replifa-page .modal-copy p:not(.eyebrow):not(.modal-meta),
+.lang-zh .replifa-page .modal-copy ul li { font-family: var(--fangsong); }
+.lang-zh .replifa-section .section-heading h2 { font-family: var(--mincho); }
+.lang-zh .replifa-section .section-heading-text p { font-family: var(--fangsong); }
+.lang-zh .replifa-page .band-copy p { font-family: var(--mincho); }
+.lang-zh .replifa-page .feature-copy p:not(.eyebrow) { font-family: var(--fangsong); }
 .section-number { font-family: var(--mono); font-weight: 800; color: var(--muted); margin-bottom: 20px; }
 .large-text { margin: 34px 0 0; font-size: clamp(1.125rem, 2vw, 1.5625rem); line-height: 1.45; color: var(--muted); }
 

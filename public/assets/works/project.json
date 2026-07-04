@@ -477,7 +477,8 @@
       "medium": "",
       "dimension": "",
       "description": "An under-layer styling study from RepliFa.",
-      "materials": [],
+      "materials": ["Shirt: 98% cotton, 2% spandex.", "Pants: 100% wool"],
+      "materialsZh": ["上衣：98% 棉，2% 氨纶。", "裤子：100% 羊毛"],
       "link": "",
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/Underlayer-U1/1.jpg",
@@ -505,7 +506,8 @@
       "medium": "",
       "dimension": "",
       "description": "An under-layer styling study from RepliFa.",
-      "materials": [],
+      "materials": ["Shirt: 70% cotton, 30% linen.", "Shorts: 100% wool"],
+      "materialsZh": ["上衣：70% 棉，30% 亚麻。", "短裤：100% 羊毛"],
       "link": "",
       "filePath": {
         "main": "/assets/works/fashion/RepliFa/Underlayer-U2/1.jpg",
@@ -531,12 +533,15 @@
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 8.5",
+      "mediumZh": "男码8.5",
       "dimension": "",
       "description": "",
+      "descriptionZh": "",
       "materials": [
         "Coated Cow Leather",
         "3cm heel"
       ],
+      "materialsZh": ["蜡面质感牛皮", "3厘米跟"],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-01/video/1.mp4",
       "filePath": {
@@ -561,12 +566,15 @@
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 12",
+      "mediumZh": "男码12",
       "dimension": "",
       "description": "",
+      "descriptionZh": "",
       "materials": [
         "Lambskin Leather",
         "3cm heel"
       ],
+      "materialsZh": ["荔枝纹小羊皮", "3厘米跟"],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-02/video/2.mp4",
       "filePath": {
@@ -591,12 +599,15 @@
       "date": "",
       "category": ["Footwear"],
       "medium": "Women's Size 9",
+      "mediumZh": "女码9",
       "dimension": "",
       "description": "",
+      "descriptionZh": "",
       "materials": [
         "Pebbled Calf Leather",
         "11cm heel"
       ],
+      "materialsZh": ["荔枝纹小羊皮", "11厘米跟"],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-03/video/3.mp4",
       "filePath": {
@@ -621,12 +632,15 @@
       "date": "",
       "category": ["Footwear"],
       "medium": "Women's Size 9",
+      "mediumZh": "女码9",
       "dimension": "",
       "description": "",
+      "descriptionZh": "",
       "materials": [
         "Pebbled Calf Leather",
         "13cm heel"
       ],
+      "materialsZh": ["荔枝纹小羊皮", "13厘米跟"],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-04/video/4.mp4",
       "filePath": {
@@ -647,16 +661,19 @@
     {
       "number": "",
       "name": "Prototype",
-      "nameZh": "文物复制品",
+      "nameZh": "原型复制品",
       "date": "",
       "category": ["Footwear"],
       "medium": "Men's Size 8",
+      "mediumZh": "男码8",
       "dimension": "",
       "description": "",
+      "descriptionZh": "",
       "materials": [
         "Muslin",
         "No heel"
       ],
+      "materialsZh": ["白胚布"],
       "link": "",
       "cardVideo": "/assets/works/fashion/Shoes/Shoe-05/video/5.mp4",
       "filePath": {

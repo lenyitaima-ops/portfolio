@@ -5,6 +5,11 @@ import LookCard from '../../components/LookCard/LookCard'
 import LookModal from '../../components/LookModal/LookModal'
 import './ShoesPage.css'
 
+const renderMixed = (text) =>
+  text.split(/([\u4e00-\u9fff]+)/).map((part, i) =>
+    /[\u4e00-\u9fff]/.test(part) ? <span className="cjk" key={i}>{part}</span> : part
+  )
+
 const ShoesPage = () => {
   const { t } = useLang()
   const [shoes, setShoes] = useState([])
@@ -59,7 +64,7 @@ const ShoesPage = () => {
         <div className="shoes-hero-overlay">
           <div className="shoes-hero-copy">
             <h1>RepliFa</h1>
-            <p className="shoes-hero-sub">Shoe Collection</p>
+            <p className="shoes-hero-sub">{t('shoes.heroSub')}</p>
           </div>
         </div>
       </section>
@@ -67,6 +72,7 @@ const ShoesPage = () => {
       <section className="shoes-intro">
         <img src="/assets/works/fashion/Shoes/2.jpg" alt="Mawangdui Han tomb excavation" />
         <div className="shoes-intro-copy">
+          <h2>{t('shoes.introTitle')}</h2>
           <p>{t('shoes.introBody')}</p>
         </div>
       </section>
@@ -87,7 +93,7 @@ const ShoesPage = () => {
 
       <section className="shoes-section" id="shoes">
         <div className="section-heading">
-          <h2>{t('shoes.looksH2')}</h2>
+          <h2>{renderMixed(t('shoes.looksH2'))}</h2>
           <p>{t('shoes.looksDesc')}</p>
         </div>
 

@@ -10,12 +10,24 @@
   gap: 20px;
   padding: 12px 20px;
   background: transparent;
+}
+/* Blur lives on a pseudo-element (not the header itself) so the dropdown
+   menus, which are descendants, can run their own backdrop-filter. A
+   backdrop-filter on an ancestor would otherwise break the menus' blur. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   backdrop-filter: blur(16px);
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
+  z-index: -1;
+  pointer-events: none;
 }
 .brand { display: flex; align-items: baseline; gap: 10px; letter-spacing: .24em; }
 .brand span { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; color: var(--ink); }
-.lang-zh .brand span { font-family: var(--sans); }
+.lang-zh .brand span,
+.lang-zh .nav-trigger,
+.lang-zh .nav .pill { font-family: var(--fangsong); }
 .brand small { font-size: 0.625rem; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav a, .nav-trigger, .nav-toggle, .nav .pill {

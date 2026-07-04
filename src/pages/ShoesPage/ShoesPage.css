@@ -30,11 +30,23 @@
   max-width: 720px;
   margin: clamp(20px, 4vw, 56px);
 }
+.shoes-intro-copy h2 { margin: 0 0 20px; color: var(--paper); font-family: var(--serif); font-size: clamp(2rem, 4.5vw, 3.75rem); line-height: 1; }
 .shoes-intro-copy p { margin: 0; color: var(--paper); line-height: 1.55; font-size: clamp(1.375rem, 2.6vw, 2.125rem); }
+.lang-zh .shoes-intro-copy h2 { font-family: var(--mincho); }
+.lang-zh .shoes-intro-copy p { font-family: var(--fangsong); }
+.lang-zh .shoes-hero-sub { font-family: var(--fangsong); }
 .shoes-section { padding: clamp(40px, 8vw, 90px) clamp(18px, 5vw, 80px) clamp(76px, 11vw, 140px); }
 .shoes-page .section-heading { max-width: 840px; margin-bottom: 34px; }
 .shoes-page .section-heading h2 { font-family: var(--sans); }
 .shoes-page .section-heading p:last-child { max-width: 650px; color: var(--muted); font-size: 1.125rem; line-height: 1.6; }
+.lang-zh .shoes-page .section-heading h2 { font-family: var(--serif); }
+.lang-zh .shoes-page .section-heading h2 .cjk { font-family: var(--mincho); }
+.lang-zh .shoes-page .section-heading p { font-family: var(--fangsong); }
+.lang-zh .shoes-page .look-card h3 { font-family: var(--mincho); }
+.lang-zh .shoes-page .modal-copy h2 { font-family: var(--mincho); }
+.lang-zh .shoes-page .modal-copy .modal-meta { font-family: var(--sans); }
+.lang-zh .shoes-page .modal-copy p:not(.eyebrow):not(.modal-meta) { font-family: var(--fangsong); }
+.lang-zh .shoes-page .modal-copy ul li { font-family: var(--fangsong); }
 .shoes-split {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -58,6 +58,8 @@ const translations = {
     'replifa.moreImages': 'More images',
 
     'shoes.tag': 'Footwear',
+    'shoes.heroSub': 'Shoe Collection',
+    'shoes.introTitle': 'Forms Beneath the Foot',
     'shoes.introBody':
       'The Mawangdui Han tombs preserve a rich and complete aesthetic system. Among its most representative elements, the forked-toe shoe stands out as one of the earliest footwear forms and one of the most influential prototypes in the later development of Chinese footwear.',
     'shoes.looksH2': 'RepliFa Shoe Collection',
@@ -101,7 +103,7 @@ const translations = {
     'replifa.statementH2': '本作品旨在挑战以欧洲中心主义为核心的服装界。',
     'replifa.statementBody':
       '包括但不限于从根本挑战其权威性，从西式哲学对于身体的思考：其表达的具象、抽象概念，以及通过历史因素潜移默化地影响了人类对于服装的构造逻辑和审美。',
-    'replifa.bandCopy': '只有以文物为依据重构，方能真正再现那失落已久的美学。',
+    'replifa.bandCopy': '只有以文物为依据的重构，方能真正再现那失落已久的美学。',
     'replifa.featureEyebrow': '结构详解',
     'replifa.featureBody':
       '外摆，亦名“增耳”，是明代服饰中最具识别度的结构之一，它将原本服务于衣身的裁剪转化为一种权力表达。而在我所建立的体系中，“摆”不仅只是服装结构，也不用依附于西式裁剪所定义的权威语言；它成为一种独立的结构标识，用以重新建构属于东方服饰的权力表达。',
@@ -127,6 +129,8 @@ const translations = {
     'replifa.moreImages': '更多图片',
 
     'shoes.tag': '鞋履',
+    'shoes.heroSub': '鞋履衍生系列',
+    'shoes.introTitle': '足下之形',
     'shoes.introBody':
       '长沙马王堆汉墓保存了一整套丰富且完整的审美体系，而其中最具代表性、也对中国后世鞋履发展影响最为深远的，正是早期鞋履形态之一的歧头履。',
     'shoes.looksH2': 'RepliFa 鞋履系列',
