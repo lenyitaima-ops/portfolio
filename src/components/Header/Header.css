@@ -56,6 +56,11 @@
 .site-header.is-home .nav .pill:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 .nav-toggle { display: none; cursor: pointer; }
 
+@media (max-width: 760px) {
+  .brand { letter-spacing: .14em; }
+  .brand span { font-size: 0.95rem; line-height: 1; }
+}
+
 .nav-dropdown { position: relative; }
 .nav-menu {
   position: absolute;
