@@ -153,12 +153,32 @@ const translations = {
 const LanguageContext = createContext({ lang: 'en', setLang: () => {}, t: (k) => k })
 
 export const LanguageProvider = ({ children }) => {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'en')
+  const [lang, setLangState] = useState(() => localStorage.getItem('lang') || 'en')
 
   useEffect(() => {
-    localStorage.setItem('lang', lang)
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'
   }, [lang])
+
+  // Persisting setter: a manual choice becomes the remembered preference.
+  const setLang = (next) => {
+    localStorage.setItem('lang', next)
+    setLangState(next)
+  }
+
+  // First visit only (no saved preference): infer language from the visitor's
+  // country via IP geolocation. Visitors from China default to Chinese.
+  useEffect(() => {
+    if (localStorage.getItem('lang')) return
+    let cancelled = false
+    fetch('https://ipapi.co/json/')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (cancelled || !data) return
+        setLang(data.country_code === 'CN' ? 'zh' : 'en')
+      })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [])
 
   const value = useMemo(
     () => ({
